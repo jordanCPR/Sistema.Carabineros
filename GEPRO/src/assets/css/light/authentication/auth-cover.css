@@ -101,21 +101,20 @@ body:before {
   .auth-container {
     height: auto;
   }
-  .auth-container .card .card-body {
+  .auth-container .card .card-body {  
     padding-top: 24px;
     padding-bottom: 24px;
   }
 }
 
-
 .container-carabinero {
-  animation: slideInLeft 0.8s ease-out;
+  animation: slideInLeft 0.8s ease-in;
 }
 
 @keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(100px);
   }
   to {
     opacity: 1;

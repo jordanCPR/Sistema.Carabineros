@@ -116,6 +116,7 @@ code {
   justify-content: flex-start;
 }
 
+
 #container.fixed-header {
   margin-top: 56px;
 }
@@ -128,6 +129,10 @@ code {
   margin-left: 255px;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
+  background-image: url('../../../../src/assets/img/fondodesnivel.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
 }
 
 .main-container-fluid > .main-content > .container {
@@ -762,23 +767,8 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   box-shadow: 5px 0 25px 0 rgba(14, 23, 38, 0.0588235294);
 }
 
-.shadow-bottom {
-  display: block;
-  position: absolute;
-  z-index: 2;
-  height: 26px;
-  width: 94%;
-  pointer-events: none;
-  margin-top: -15px;
-  left: 6px;
-  -webkit-filter: blur(5px);
-  filter: blur(7px);
-  background: -webkit-linear-gradient(#0e1726 41%, rgba(14, 23, 38, 0.839) 95%, rgba(14, 23, 38, 0.22));
-  background: linear-gradient(#0e1726 41%, rgba(14, 23, 38, 0.839) 95%, rgba(14, 23, 38, 0.22));
-}
-
 .sidebar-theme {
-  background: #3b631c;
+  background-image: linear-gradient(-225deg, #0a1c08 0%, #203807 29%, #558b2f 100%);
 }
 
 .sidebar-closed > .sidebar-wrapper {
@@ -805,9 +795,7 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
 }
 
 #sidebar .theme-brand {
-  background-color: #0e1726;
   padding: 10px 12px 6px 21px;
-  border-bottom: 1px solid #0e1726;
   border-radius: 8px 6px 0 0;
   justify-content: space-between;
 }
@@ -942,7 +930,7 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   width: 12px;
   height: 12px;
   stroke-width: 4px;
-  color: #506690;
+  color: white;
 }
 
 .sidebar-closed .sidebar-wrapper ul.menu-categories li.menu.menu-heading > .heading .feather-minus {
@@ -956,7 +944,7 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   cursor: pointer;
   font-size: 13px;
   font-weight: 600;
-  color: #506690;
+  color: #f8f8f8;
   padding: 32px 0 10px 36px;
   letter-spacing: 1px;
 }
@@ -1045,16 +1033,16 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   stroke-width: 1.8;
 }
 #sidebar ul.menu-categories li.menu.active > .dropdown-toggle {
-  background-color: #008eff;
+  background-color:  white;
 }
 #sidebar ul.menu-categories li.menu.active > .dropdown-toggle svg, #sidebar ul.menu-categories li.menu.active > .dropdown-toggle span {
-  color: #fff;
+  color: #09692b;
 }
 #sidebar ul.menu-categories li.menu.active > .dropdown-toggle[aria-expanded=true] {
   background: rgba(255, 255, 255, 0.07);
 }
 #sidebar ul.menu-categories li.menu.active > .dropdown-toggle:hover {
-  color: #fff;
+  color: #09692b;
 }
 #sidebar ul.menu-categories li.menu.active > .dropdown-toggle:hover svg:not(.badge-icon) {
   color: #fff;
@@ -1154,7 +1142,7 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   content: "";
   position: absolute;
   background-color: rgba(255, 255, 255, 0.07);
-  background-color: #008eff;
+  background-color: #2c4119;
   width: 15px;
   height: 42px;
   width: 100%;
@@ -1451,7 +1439,7 @@ body.alt-menu #content {
 }
 
 .btn-carabineros{
-  background: #09692b; 
+  background: #09692b !important; 
   color: white;
 }
 
@@ -1462,7 +1450,25 @@ body.alt-menu #content {
 
 .input-carabineros:focus{
    padding: 4%;
+   border: 3px solid #09692b !important;
+   border-radius: 0;
 }
+
+.container-carabinero {
+  animation: slideInLeft 0.8s ease-in;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 
 
