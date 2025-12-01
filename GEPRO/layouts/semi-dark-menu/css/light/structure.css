@@ -129,7 +129,7 @@ code {
   margin-left: 255px;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
-  background-image: url('../../../../src/assets/img/fondodesnivel.png');
+  background-color: #f5f5dc;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
@@ -240,7 +240,7 @@ code {
 =====================
 */
 .header-container {
-  background: #fff;
+  background: #343a40;
   z-index: 1030;
   position: fixed;
   top: 0;
@@ -257,10 +257,9 @@ code {
   -webkit-box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.14), 0 1px 18px 0 rgba(255, 255, 255, 0.12), 0 3px 5px -1px rgba(255, 255, 255, 0.2);
   -moz-box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.14), 0 1px 18px 0 rgba(255, 255, 255, 0.12), 0 3px 5px -1px rgba(255, 255, 255, 0.2);
   box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.14), 0 1px 18px 0 rgba(255, 255, 255, 0.12), 0 3px 5px -1px rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.9) !important;
+  background-color: white !important;
   -webkit-backdrop-filter: saturate(200%) blur(6px);
   backdrop-filter: saturate(200%) blur(6px);
-  border: 1px solid #e0e6ed;
   box-shadow: 18px 20px 10.3px -23px rgba(0, 0, 0, 0.15);
 }
 .header-container.container-xxl {
@@ -768,7 +767,7 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
 }
 
 .sidebar-theme {
-  background-image: linear-gradient(-225deg, #0a1c08 0%, #203807 29%, #558b2f 100%);
+  background: #0a1c08;
 }
 
 .sidebar-closed > .sidebar-wrapper {
@@ -1435,11 +1434,11 @@ body.alt-menu #content {
 }
 
 .text-carabineros{
-    color: #09692b;
+    color: #0a1c08;
 }
 
 .btn-carabineros{
-  background: #09692b !important; 
+  background: #0a1c08 !important; 
   color: white;
 }
 

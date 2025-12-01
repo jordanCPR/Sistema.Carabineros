@@ -27,6 +27,9 @@
     <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/stepper/custom-bsStepper.css">
     <!--  END CUSTOM STYLE FILE  -->
 
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/forms/switches.css">
+
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
     <link href="src/plugins/src/apex/apexcharts.css" rel="stylesheet" type="text/css">
     <link href="src/assets/css/light/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
@@ -35,6 +38,9 @@
 
     <link href="src/assets/css/dark/components/list-group.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="src/assets/css/dark/widgets/modules-widgets.css">    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css" integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="layout-boxed">
     <!-- BEGIN LOADER -->
@@ -140,7 +146,7 @@
                             </a>
                         </div>
                         <div class="nav-item theme-text">
-                            <a href="./index.html" class="nav-link"> Carabineros </a>
+                            <a href="./index.html" class="nav-link"> GEPRO </a>
                         </div>
                     </div>
                     <div class="nav-item sidebar-toggle">
@@ -154,8 +160,8 @@
                     <li class="menu active">
                         <a href="#dashboard" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
                             <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                                <span>Inicio</span>
+                                
+                                <span><i class="fa-solid fa-house"></i> Inicio</span>
                             </div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
@@ -175,8 +181,7 @@
                     <li class="menu">
                         <a href="#components" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                                <span>Gestión</span>
+                                <span><i class="fa-solid fa-file-signature"></i> Gestión</span>
                             </div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
@@ -196,8 +201,7 @@
                     <li class="menu">
                         <a href="#users" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                                <span>Perfil</span>
+                                <span><i class="fa-solid fa-user"></i> Perfil</span>
                             </div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
@@ -237,6 +241,44 @@
                     </div>
                     <!-- /BREADCRUMB -->
 
+                    <div class="row layout-top-spacing">
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+                            <div class="card" style="background-color: #869099;">
+                                <div class="card-body pt-3">
+                                    <h5 class="card-title mb-3">Cargas Masiva Contratos</h5>
+                                    <a class="btn btn-info btn-xs">Descargar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6  mb-4">
+                            <div class="card bg-secondary">
+                                <div class="card-body pt-3">
+                                    <h5 class="card-title mb-3">Autorización/Anulación carga masiva de contratos</h5>
+                                    <p class="card-text">Autorización/Anulación de Cargas Masivas de Contrato</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-6 col-lg-6 col-md-6  mb-4">
+                            <div class="card bg-dark">
+                                <div class="card-body pt-3">
+                                    <h5 class="card-title mb-3">Autoriza Ingreso de Contratos</h5>
+                                    <p class="card-text">Autorización Ingreso de Contratos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6  mb-4">
+                            <div class="card bg-danger">
+                                <div class="card-body pt-3">
+                                    <h5 class="card-title mb-3">Modifica E-MAIL Funcionario</h5>
+                                    <p class="card-text">Modificación de E-MAIL Funcionario</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row layout-top-spacing container-carabinero" id="cancel-row">
 
                         <div id="wizard_Default" class="col-lg-12 layout-spacing">
@@ -244,17 +286,17 @@
                                 <div class="widget-header">
                                     <div class="row">
                                         <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4><span><img src="./src/assets/img/contrato.png" width="30" height="50"></span>Gestión de Contrataciones</h4>
+                                            <h4><span><i class="fa-solid fa-file-signature"></i></span> Gestión de Contrataciones</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget-content widget-content-area w-100">
                                     <div class="row">
                                         <div class="col-4">
-                                            <input type="text" class="form-control input-carabineros" id="" placeholder="Ingresar Rut">
+                                            <input type="text" class="form-control input-carabineros input-sm" id="" placeholder="Ingresar Rut">
                                         </div>
                                         <div class="col-4">
-                                            <select class="form-select" id="">
+                                            <select class="form-select input-sm" id="">
                                                 <option selected disabled>--TIPO--</option>
                                                 <option value="uniformado">Uniformado</option>
                                                 <option value="civil_planta">Civil Planta</option>
@@ -267,7 +309,7 @@
                                             </select>
                                         </div>
                                         <div class="col-4">
-                                            <select class="form-select" id="">
+                                            <select class="form-select input-sm" id="">
                                                 <option selected disabled>--ACCION--</option>
                                                 <option value="uniformado">Ingresar</option>
                                                 <option value="uniformado">Consultar</option>
@@ -399,8 +441,8 @@
                                                     </div>
                                                 </form>
                                                 <div class="button-action mt-5">
-                                                    <button class="btn btn-carabineros btn-prev me-3" disabled>Anterior</button>
-                                                    <button class="btn btn-carabineros btn-nxt">Siguiente</button>
+                                                    <button class="btn btn-carabineros btn-prev me-3" disabled><i class="fa-solid fa-angle-left"></i> Anterior</button>
+                                                    <button class="btn btn-carabineros btn-nxt">Siguiente <i class="fa-solid fa-angle-right"></i></button>
                                                 </div>
                                             </div>
                                             <div id="defaultStep-two" class="content" role="tabpanel">
@@ -438,8 +480,8 @@
                                                     </div>
                                                 </form>
                                                 <div class="button-action mt-5">
-                                                    <button class="btn btn-carabineros btn-prev me-3">Anterior</button>
-                                                    <button class="btn btn-carabineros btn-nxt">Siguiente</button>
+                                                    <button class="btn btn-carabineros btn-prev me-3"><i class="fa-solid fa-angle-left"></i> Anterior</button>
+                                                    <button class="btn btn-carabineros btn-nxt">Siguiente <i class="fa-solid fa-angle-right"></i></button>
                                                 </div>
                                             </div>
                                             <div id="defaultStep-three" class="content" role="tabpanel" >
@@ -471,8 +513,8 @@
                                                 </form>
 
                                                 <div class="button-action mt-3">
-                                                    <button class="btn btn-carabineros btn-prev me-3">Anterior</button>
-                                                    <button class="btn btn-carabineros btn-nxt">Siguiente</button>
+                                                    <button class="btn btn-carabineros btn-prev me-3"><i class="fa-solid fa-angle-left"></i> Anterior</button>
+                                                    <button class="btn btn-carabineros btn-nxt">Siguiente <i class="fa-solid fa-angle-right"></i></button>
                                                 </div>
                                             </div>
                                             <div id="defaultStep-four" class="content" role="tabpanel" >
@@ -501,8 +543,8 @@
                                                     </div>
                                                 </form>
                                                 <div class="button-action mt-3">
-                                                    <button class="btn btn-carabineros btn-prev me-3">Anterior</button>
-                                                    <button class="btn btn-carabineros btn-nxt">Siguiente</button>
+                                                    <button class="btn btn-carabineros btn-prev me-3"><i class="fa-solid fa-angle-left"></i> Anterior</button>
+                                                    <button class="btn btn-carabineros btn-nxt">Siguiente<i class="fa-solid fa-angle-right"></i></button>
                                                 </div>
                                             </div>
                                             <div id="defaultStep-five" class="content" role="tabpanel" >
@@ -540,7 +582,7 @@
                                                 </form>
 
                                                 <div class="button-action mt-3">
-                                                    <button class="btn btn-carabineros btn-prev me-3">Anterior</button>
+                                                    <button class="btn btn-carabineros btn-prev me-3"><i class="fa-solid fa-angle-left"></i> Anterior</button>
                                                     <button class="btn btn-success me-3">Grabar</button>
                                                     <button class="btn btn-info me-3">Limpiar</button>
                                                 </div>
@@ -556,7 +598,7 @@
                 </div>
             </div>
 
-            <footer class="footer bg-secondary-subtle p-5">
+            <footer class="footer p-5">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-3">
