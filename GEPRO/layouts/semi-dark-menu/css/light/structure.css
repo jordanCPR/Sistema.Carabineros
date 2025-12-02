@@ -129,10 +129,6 @@ code {
   margin-left: 255px;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
-  background-color: #f5f5dc;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; 
 }
 
 .main-container-fluid > .main-content > .container {
@@ -1437,10 +1433,6 @@ body.alt-menu #content {
     color: #0a1c08;
 }
 
-.btn-carabineros:hover{
-  color:white;
-}
-
 .btn-carabineros{
   transition: all 0.8s;
   background: #0a1c08 !important; 
@@ -1461,7 +1453,6 @@ body.alt-menu #content {
   transform: translate3d(0, 0, 0);
 }
 
-
 .input-carabineros{
   transition: all 0.8s;
   padding: 2%;
@@ -1469,12 +1460,24 @@ body.alt-menu #content {
 
 .input-carabineros:focus{
    padding: 4%;
-   border: 3px solid #09692b !important;
+   border: 3px solid #0a1c08 !important;
    border-radius: 0;
 }
 
+.btn-carabinero-big{
+  transition: 0.5s all;
+}
+
+.btn-carabinero-big:hover{
+  color: white;
+  box-shadow: 0 4px 4px 0 #0a1c08;
+  transform: translate3d(2px, 2px, 0);
+  border: 1px solid #0a1c08 !important;
+  cursor: pointer;
+}
+
 .container-carabinero {
-  animation: slideInLeft 0.8s ease-in;
+  animation: slideInLeft 2s ease-in;
 }
 
 @keyframes slideInLeft {
