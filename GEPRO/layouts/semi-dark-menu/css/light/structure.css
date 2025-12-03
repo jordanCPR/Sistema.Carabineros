@@ -1470,9 +1470,8 @@ body.alt-menu #content {
 
 .btn-carabinero-big:hover{
   color: white;
-  box-shadow: 0 4px 4px 0 #0a1c08;
+  box-shadow: 0 2px 2px 0 #e0e0e04b;
   transform: translate3d(2px, 2px, 0);
-  border: 1px solid #0a1c08 !important;
   cursor: pointer;
 }
 
