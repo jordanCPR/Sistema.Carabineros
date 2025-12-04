@@ -338,10 +338,10 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   word-wrap: normal;
 }
 .navbar .navbar-item .nav-item.dropdown.show a.nav-link span {
-  color: #805dca !important;
+  color: #0a1c08 !important;
 }
 .navbar .navbar-item .nav-item.dropdown.show a.nav-link span.badge {
-  background-color: #2196f3 !important;
+  background-color: #515365 !important;
   color: #fff !important;
 }
 .navbar .navbar-item .nav-item .dropdown-item.active, .navbar .navbar-item .nav-item .dropdown-item:active {
@@ -349,7 +349,7 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   color: #16181b;
 }
 .navbar .navbar-item .nav-item.dropdown .nav-link:hover span {
-  color: #805dca !important;
+  color: #0a1c08 !important;
 }
 .navbar .navbar-item .nav-item.dropdown .dropdown-menu {
   border-radius: 0;
@@ -707,7 +707,7 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   font-size: 13px;
   font-weight: 500;
   margin-bottom: 0;
-  color: #4361ee;
+  color: #515365;
 }
 .navbar .navbar-item .nav-item.dropdown.user-profile-dropdown .nav-link:after {
   display: none;
