@@ -28,8 +28,8 @@
     <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/stepper/custom-bsStepper.css">
     <!--  END CUSTOM STYLE FILE  -->
 
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/forms/switches.css">
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/light/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/dark/forms/switches.css">
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
     <link href="src/plugins/src/apex/apexcharts.css" rel="stylesheet" type="text/css">
@@ -46,6 +46,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
         integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="src/plugins/src/sweetalerts2/sweetalerts2.css">
+
+    <link href="src/assets/css/light/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="src/plugins/css/light/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+
+    <link href="src/assets/css/dark/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="src/plugins/css/dark/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="layout-boxed">
@@ -192,7 +200,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>SIGEAPER</span></div>
+                            </svg><span>Modulo SIGEAPER</span></div>
                     </li>
 
                     <li class="menu">
@@ -326,7 +334,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>SISPER</span>
+                            </svg><span>Modulo SISPER</span>
                         </div>
                     </li>
 
@@ -335,7 +343,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>SIIPER</span>
+                            </svg><span>Modulo SIIPER</span>
                         </div>
                     </li>
 
@@ -360,7 +368,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>RIPER</span>
+                            </svg><span>Modulo RIPER</span>
                         </div>
                     </li>
 
@@ -444,7 +452,7 @@
                     <div class="row layout-top-spacing container-carabinero">
                         <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
                             <div class="card btn-carabinero-big">
-                                <a href="./contrato.html">
+                                <a href="#" onclick="TipoCuenta()">
                                     <div class="card-body pt-3">
                                         <p class="mb-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -644,6 +652,10 @@
         <!-- BEGIN PAGE LEVEL SCRIPTS -->
         <script src="src/plugins/src/stepper/bsStepper.min.js"></script>
         <script src="src/plugins/src/stepper/custom-bsStepper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="src/assets/js/scrollspyNav.js"></script>
+        <script src="src/plugins/src/sweetalerts2/sweetalerts2.min.js"></script>
+        <script src="src/plugins/src/sweetalerts2/custom-sweetalert.js"></script>
         <!-- END PAGE LEVEL SCRIPTS -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -657,6 +669,37 @@
                     themeToggle.click();
                 });
             });
+        </script>
+
+        <script>
+            function TipoCuenta() {
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, delete it!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        swalWithBootstrapButtons.fire(
+                            'Deleted!',
+                            'Your file has been deleted.',
+                            'success'
+                        )
+                    } else if (
+                        /* Read more about handling dismissals below */
+                        result.dismiss === Swal.DismissReason.cancel
+                    ) {
+                        swalWithBootstrapButtons.fire(
+                            'Cancelled',
+                            'Your imaginary file is safe :)',
+                            'error'
+                        )
+                    }
+                })
+            }
         </script>
 </body>
 
