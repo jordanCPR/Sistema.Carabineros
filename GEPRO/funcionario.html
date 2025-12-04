@@ -11,6 +11,16 @@
     <link href="layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
     <script src="layouts/semi-dark-menu/loader.js"></script>
 
+
+    <link rel="stylesheet" href="../src/plugins/src/filepond/filepond.min.css">
+    <link rel="stylesheet" href="../src/plugins/src/filepond/FilePondPluginImagePreview.min.css">
+    <link href="../src/plugins/src/notification/snackbar/snackbar.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../src/plugins/src/sweetalerts2/sweetalerts2.css">
+    
+    <link href="../src/plugins/css/light/filepond/custom-filepond.css" rel="stylesheet" type="text/css" />
+    <link href="../src/assets/css/light/components/tabs.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/elements/alert.css">
+    
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -40,12 +50,23 @@
     <link href="src/assets/css/dark/components/list-group.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="src/assets/css/dark/widgets/modules-widgets.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
-        integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../src/plugins/css/light/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="../src/plugins/css/light/notification/snackbar/custom-snackbar.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/forms/switches.css">
+    <link href="../src/assets/css/light/components/list-group.css" rel="stylesheet" type="text/css">
+
+    <link href="../src/assets/css/light/users/account-setting.css" rel="stylesheet" type="text/css" />
+
+    <link href="../src/plugins/css/dark/filepond/custom-filepond.css" rel="stylesheet" type="text/css" />
+    <link href="../src/assets/css/dark/components/tabs.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/elements/alert.css">
+    
+    <link href="../src/plugins/css/dark/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="../src/plugins/css/dark/notification/snackbar/custom-snackbar.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/forms/switches.css">
+    <link href="../src/assets/css/dark/components/list-group.css" rel="stylesheet" type="text/css">
+
+    <link href="../src/assets/css/dark/users/account-setting.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="layout-boxed">
@@ -140,7 +161,302 @@
     <!--  END NAVBAR  -->
 
     <!--  BEGIN MAIN CONTAINER  -->
-    <div id="content" class="main-content">
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+            <nav id="sidebar">
+                <div class="navbar-nav theme-brand flex-row  text-center">
+                    <div class="nav-logo">
+                        <div class="nav-item theme-logo">
+                            <a href="./index.html">
+                                <img src="src/assets/img/gepro2.png" class="up-object" alt="logo">
+                            </a>
+                        </div>
+                        <div class="nav-item theme-text">
+                            <a href="./index.html" class="nav-link"> GEPRO </a>
+                        </div>
+                    </div>
+                    <div class="nav-item sidebar-toggle">
+                        <div class="btn-toggle sidebarCollapse">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevrons-left">
+                                <polyline points="11 17 6 12 11 7"></polyline>
+                                <polyline points="18 17 13 12 18 7"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-bottom"></div>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu active">
+                        <a href="#dashboard" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-home">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                <span>Bienvenido</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled show" id="dashboard"
+                            data-bs-parent="#accordionExample">
+                            <li class="">
+                                <a href="./welcome.html"> Inicio </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span>SIGEAPER</span></div>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#components" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file-text">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>Gestión</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="./contrato.html"> Contratos </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Revista Comisario </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Gestión de Beneficios </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Reconocimientos</a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Retiros y Bajas </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Cargas Familiares </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Adm. Tramos Cargas Familiares </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Cargas Masivas </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Resoluciones</a>
+                            </li>
+                        </ul>
+
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Anotaciones Bloqueo</a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Condición de Servicios</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-database">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                                <span>Estadistica y Reporte</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-database">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                                <span>Parámetros</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-grid">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                                <span>Otros Procesos</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span>SISPER</span>
+                        </div>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span>SIIPER</span>
+                        </div>
+                    </li>
+
+                    <li class="menu active">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-grid">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                                <span>Gestión Funcionario</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-grid">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                                <span>Sanciones</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span>RIPER</span>
+                        </div>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span>CONFIGURACIONES</span></div>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#users" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-user">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                <span>Perfil</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="users" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="./user-profile.html"> Perfil </a>
+                            </li>
+                            <li>
+                                <a href="./user-account-settings.html"> Configuración Cuenta </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <!--  END SIDEBAR  -->
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
             <div class="layout-px-spacing">
 
                 <div class="middle-content container-xxl p-0">
@@ -149,8 +465,25 @@
                     <div class="page-meta">
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Users</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Account Settings</li>
+                                <li class="breadcrumb-item">
+                                    <a href="./welcome.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-home">
+                                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                        </svg> Inicio
+                                    </a>
+                                </li>
+
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-user">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg> Gestión Funcionarios
+                                </li>
                             </ol>
                         </nav>
                     </div>
@@ -161,20 +494,18 @@
                         <div class="account-content">
                             <div class="row mb-3">
                                 <div class="col-md-12">
-                                    <h2>Settings</h2>
-
                                     <ul class="nav nav-pills" id="animateLine" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="animated-underline-home-tab" data-bs-toggle="tab" href="#animated-underline-home" role="tab" aria-controls="animated-underline-home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</button>
+                                            <button class="nav-link active" id="animated-underline-home-tab" data-bs-toggle="tab" href="#animated-underline-home" role="tab" aria-controls="animated-underline-home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Antecedentes Profesionales</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="animated-underline-profile-tab" data-bs-toggle="tab" href="#animated-underline-profile" role="tab" aria-controls="animated-underline-profile" aria-selected="false" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg> Payment Details</button>
+                                            <button class="nav-link" id="animated-underline-profile-tab" data-bs-toggle="tab" href="#animated-underline-profile" role="tab" aria-controls="animated-underline-profile" aria-selected="false" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg> Personales</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="animated-underline-preferences-tab" data-bs-toggle="tab" href="#animated-underline-preferences" role="tab" aria-controls="animated-underline-preferences" aria-selected="false" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Preferences</button>
+                                            <button class="nav-link" id="animated-underline-preferences-tab" data-bs-toggle="tab" href="#animated-underline-preferences" role="tab" aria-controls="animated-underline-preferences" aria-selected="false" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Medicos </button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="animated-underline-contact-tab" data-bs-toggle="tab" href="#animated-underline-contact" role="tab" aria-controls="animated-underline-contact" aria-selected="false" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Danger Zone</button>
+                                            <button class="nav-link" id="animated-underline-contact-tab" data-bs-toggle="tab" href="#animated-underline-contact" role="tab" aria-controls="animated-underline-contact" aria-selected="false" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Anotaciones</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -186,98 +517,147 @@
                                         <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
                                             <form class="section general-info">
                                                 <div class="info">
-                                                    <h6 class="">General Information</h6>
+                                                    <h6 class="">Información General</h6>
                                                     <div class="row">
                                                         <div class="col-lg-11 mx-auto">
                                                             <div class="row">
-                                                                <div class="col-xl-2 col-lg-12 col-md-4">
-                                                                    <div class="profile-image  mt-4 pe-md-4">
-
-                                                                        <!-- // The classic file input element we'll enhance
-                                                                        // to a file pond, we moved the configuration
-                                                                        // properties to JavaScript -->
-                                                    
-                                                                        <div class="img-uploader-content">
-                                                                            <input type="file" class="filepond"
-                                                                                name="filepond" accept="image/png, image/jpeg, image/gif"/>
-                                                                        </div>
-                                                    
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-xl-10 col-lg-12 col-md-8 mt-md-0 mt-4">
+                                                                <div class="col-xl-112 col-lg-12 col-md-8 mt-md-0 mt-4">
                                                                     <div class="form">
                                                                         <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="fullName">Full Name</label>
+                                                                                    <label for="fullName">Nombre Completo</label>
                                                                                     <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" value="Jimmy Turner">
                                                                                 </div>
                                                                             </div>
             
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="profession">Profession</label>
+                                                                                    <label for="profession">Codigo Funcionario</label>
                                                                                     <input type="text" class="form-control mb-3" id="profession" placeholder="Designer" value="Web Developer">
                                                                                 </div>
                                                                             </div>
                                                                             
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="country">Country</label>
-                                                                                    <select class="form-select mb-3" id="country">
-                                                                                        <option>All Countries</option>
-                                                                                        <option selected>United States</option>
-                                                                                        <option>India</option>
-                                                                                        <option>Japan</option>
-                                                                                        <option>China</option>
-                                                                                        <option>Brazil</option>
-                                                                                        <option>Norway</option>
-                                                                                        <option>Canada</option>
-                                                                                    </select>
+                                                                                    <label for="country">Escalafón</label>
+                                                                                    <input type="text" class="form-control mb-3" id="profession" placeholder="Designer" value="Web Developer">
+
                                                                                 </div>
                                                                             </div>
                                                                             
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="address">Address</label>
+                                                                                    <label for="address">Grado</label>
                                                                                     <input type="text" class="form-control mb-3" id="address" placeholder="Address" value="New York" >
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="location">Location</label>
+                                                                                    <label for="location">Grado Histórico</label>
                                                                                     <input type="text" class="form-control mb-3" id="location" placeholder="Location">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="phone">Phone</label>
+                                                                                    <label for="phone">Nro. Orden</label>
                                                                                     <input type="text" class="form-control mb-3" id="phone" placeholder="Write your phone number here" value="+1 (530) 555-12121">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="email">Email</label>
+                                                                                    <label for="email">Fecha Ascenso</label>
                                                                                     <input type="text" class="form-control mb-3" id="email" placeholder="Write your email here" value="Jimmy@gmail.com">
                                                                                 </div>
                                                                             </div>                                    
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="website1">Website</label>
+                                                                                    <label for="website1">Años en Grado</label>
                                                                                     <input type="text" class="form-control mb-3" id="website1" placeholder="Enter URL">
                                                                                 </div>
                                                                             </div>
-    
-                                                                            <div class="col-md-12 mt-1">
-                                                                                <div class="form-check">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="customCheck1">
-                                                                                    <label class="form-check-label" for="customCheck1">Make this my default address</label>
+
+
+
+
+
+
+
+                                                                                                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                    <label for="country">Fecha Ingreso</label>
+                                                                                    <input type="text" class="form-control mb-3" id="profession" placeholder="Designer" value="Web Developer">
+
                                                                                 </div>
                                                                             </div>
+                                                                            
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="address">Años de Servicio</label>
+                                                                                    <input type="text" class="form-control mb-3" id="address" placeholder="Address" value="New York" >
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="location">Alta Repartición</label>
+                                                                                    <input type="text" class="form-control mb-3" id="location" placeholder="Location">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="phone">Repartición</label>
+                                                                                    <input type="text" class="form-control mb-3" id="phone" placeholder="Write your phone number here" value="+1 (530) 555-12121">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="email">Dotación</label>
+                                                                                    <input type="text" class="form-control mb-3" id="email" placeholder="Write your email here" value="Jimmy@gmail.com">
+                                                                                </div>
+                                                                            </div>                                    
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="website1">Tiempo en Dotación</label>
+                                                                                    <input type="text" class="form-control mb-3" id="website1" placeholder="Enter URL">
+                                                                                </div>
+                                                                            </div>
+
+
+
+
+
+                                                                                                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                    <label for="website1">Dotación Histórica</label>
+                                                                                    <input type="text" class="form-control mb-3" id="website1" placeholder="Enter URL">
+                                                                                </div>
+                                                                            </div>
+                                                                                                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                    <label for="website1">Cargo</label>
+                                                                                    <input type="text" class="form-control mb-3" id="website1" placeholder="Enter URL">
+                                                                                </div>
+                                                                            </div>
+                                                                                                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                    <label for="website1">Licencia SEMEP</label>
+                                                                                    <input type="text" class="form-control mb-3" id="website1" placeholder="Enter URL">
+                                                                                </div>
+                                                                            </div>
+                                                                                                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                    <label for="website1">Cambio Funciones</label>
+                                                                                    <input type="text" class="form-control mb-3" id="website1" placeholder="Enter URL">
+                                                                                </div>
+                                                                            </div>
+
+
+
+
     
                                                                             <div class="col-md-12 mt-1">
                                                                                 <div class="form-group text-end">
-                                                                                    <button class="btn btn-secondary">Save</button>
+                                                                                    <button class="btn btn-carabineros" disabled>Guardar</button>
                                                                                 </div>
                                                                             </div>
                                                                             
@@ -770,36 +1150,35 @@
                     </div>
 
                 </div>
-
-            </div>
-
-            <footer class="footer-wrapper p-3 mt-0">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-3">
-                            <img src="src/assets/img/logo.png" class="up-object" alt="Carabineros de Chile" width="70" height="70">
+                <footer class="footer-wrapper p-3 mt-0">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <img src="src/assets/img/logo.png" class="up-object" alt="Carabineros de Chile" width="70" height="70">
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <h5 class="text-carabineros">Dirección Gestión de Personas</h5>
+                                <p class="mb-0">GEPRO Version 1.0</p>
+                            </div>
+                            <div class="col-md-3 text-md-end">
+                                <img src="src/assets/img/logo-departamento.png" class="up-object" alt="Carabineros de Chile" width="70" height="70">
+                            </div>
                         </div>
-                        <div class="col-md-6 text-center">
-                            <h5 class="text-carabineros">Dirección Gestión de Personas</h5>
-                            <p class="mb-0">GEPRO Version 1.0</p>
-                        </div>
-                        <div class="col-md-3 text-md-end">
-                            <img src="src/assets/img/logo-departamento.png" class="up-object" alt="Carabineros de Chile" width="70" height="70">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="text-center p-4">
-                                © 2026 Copyright:
-                                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Carabineros de Chile</a>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="text-center p-4">
+                                    © 2026 Copyright:
+                                    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Carabineros de Chile</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
-            
+                </footer>
+            </div>
         </div>
+        <!--  END CONTENT AREA  -->
 
+    </div>
     <!-- END MAIN CONTAINER -->
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
@@ -821,6 +1200,18 @@
     <script src="src/plugins/src/stepper/bsStepper.min.js"></script>
     <script src="src/plugins/src/stepper/custom-bsStepper.min.js"></script>
     <!-- END PAGE LEVEL SCRIPTS -->
+
+    <script src="../src/plugins/src/filepond/filepond.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginFileValidateType.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageExifOrientation.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImagePreview.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageCrop.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageResize.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageTransform.min.js"></script>
+    <script src="../src/plugins/src/filepond/filepondPluginFileValidateSize.min.js"></script>
+    <script src="../src/plugins/src/notification/snackbar/snackbar.min.js"></script>
+    <script src="../src/plugins/src/sweetalerts2/sweetalerts2.min.js"></script>
+    <script src="../src/assets/js/users/account-settings.js"></script>
 
 </body>
 
