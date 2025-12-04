@@ -102,9 +102,21 @@
                             <div class="media mx-auto">
                                 <div class="media-body">
                                     <h5>Martin Salazar</h5>
-                                    <p>Programador</p>
+                                    <p class="text-carabineros">Programador</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="javascript:void(0);" class="nav-link theme-toggle">
+                                <div class="switch form-switch-custom switch-inline form-switch-primary form-switch-custom inner-icon-toggle">
+                                    <div class="input-checkbox">
+                                        <span class="switch-chk-label label-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.995 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007-2.246-5.007-5.007-5.007S6.995 9.239 6.995 12zM11 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2H2zm17 0h3v2h-3zM5.637 19.778l-1.414-1.414 2.121-2.121 1.414 1.414zM16.242 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.344 7.759 4.223 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"></path></svg></span>
+                                        <input class="switch-input" type="checkbox" role="switch" id="form-custom-switch-inner-icon" checked>
+                                        <span class="switch-chk-label label-right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"></path></svg></span>
+                                    </div>
+                                    <span>Dark/Light</span>
+                                </div>
+                            </a>
                         </div>
                         <div class="dropdown-item">
                             <a href="user-profile.html">
@@ -169,7 +181,7 @@
                 <div class="shadow-bottom"></div>
                 <ul class="list-unstyled menu-categories" id="accordionExample">
                     <li class="menu active">
-                        <a href="#dashboard" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                        <a href="./welcome.html" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -432,7 +444,7 @@
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
-            <div class="container">
+            <div class="container min-vh-100">
                 <div class="container">
 
                     <!-- BREADCRUMB -->
@@ -440,7 +452,7 @@
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    <a href="#">
+                                    <a href="./welcome.html">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                             stroke-linejoin="round" class="feather feather-home">
@@ -470,7 +482,7 @@
 
                     <div class="row layout-top-spacing container-carabinero">
                         <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
-                            <div class="card btn-carabinero-big" style="background-color: white;"  data-bs-toggle="modal" data-bs-target="#modalCargaMasivaContratos">
+                            <div class="card btn-carabinero-big" data-bs-toggle="modal" data-bs-target="#modalCargaMasivaContratos">
                                 <div class="card-body pt-3">
                                     <p class="mb-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -486,7 +498,7 @@
                         </div>
 
                         <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
-                            <div class="card btn-carabinero-big" style="background-color: white;" data-bs-toggle="modal" data-bs-target="#modalIngresoAutorizaContrato">
+                            <div class="card btn-carabinero-big" data-bs-toggle="modal" data-bs-target="#modalIngresoAutorizaContrato">
                                 <div class="card-body pt-3">
                                     <p class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -500,7 +512,7 @@
                         </div>
 
                         <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
-                            <div class="card btn-carabinero-big" style="background-color: white;" data-bs-toggle="modal" data-bs-target="#modalCambioCorreo">
+                            <div class="card btn-carabinero-big" data-bs-toggle="modal" data-bs-target="#modalCambioCorreo">
                                 <div class="card-body pt-3">
                                     <p class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1068,19 +1080,26 @@
                 </div>
             </div>
 
-            <footer class="footer p-5" style="background: white">
+            <footer class="footer-wrapper p-3 mt-0">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-3">
-                            <img src="src/assets/img/logo.png" class="up-object" alt="Carabineros de Chile" width="100" height="100">
+                            <img src="src/assets/img/logo.png" class="up-object" alt="Carabineros de Chile" width="70" height="70">
                         </div>
                         <div class="col-md-6 text-center">
                             <h5 class="text-carabineros">Dirección Gestión de Personas</h5>
-                            <p class="mb-0">SIGEAPER, SISPER, RIPER, SIIPER</p>
-                            <p class="mb-0">Version 1.0</p>
+                            <p class="mb-0">GEPRO Version 1.0</p>
                         </div>
                         <div class="col-md-3 text-md-end">
-                            <img src="src/assets/img/logo-departamento.png" class="up-object" alt="Carabineros de Chile" width="100" height="100">
+                            <img src="src/assets/img/logo-departamento.png" class="up-object" alt="Carabineros de Chile" width="70" height="70">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-center p-4">
+                                © 2026 Copyright:
+                                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Carabineros de Chile</a>
+                            </div>
                         </div>
                     </div>
                 </div>
