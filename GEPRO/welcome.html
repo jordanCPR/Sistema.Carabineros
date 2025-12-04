@@ -93,10 +93,11 @@
                             </div>
                         </div>
 
-                        <div class="form-check form-switch form-check-inline form-switch-dark">
-                            <input class="form-check-input dark-mode" type="checkbox" role="switch" id="form-custom-switch-inner-icon">
+                        <div class="form-check form-switch form-check-inline form-switch-dark theme-toggle">
+                            <input class="form-check-input" type="checkbox" role="switch" id="form-switch-dark">
                             <label class="form-check-label" for="form-switch-dark">Oscuro</label>
                         </div>
+
                         <div class="dropdown-item">
                             <a href="user-profile.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -644,7 +645,19 @@
         <script src="src/plugins/src/stepper/bsStepper.min.js"></script>
         <script src="src/plugins/src/stepper/custom-bsStepper.min.js"></script>
         <!-- END PAGE LEVEL SCRIPTS -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const chk = document.querySelector('.form-check-input.dark-mode');
+                const themeToggle = document.querySelector('.theme-toggle');
 
+                if (!chk || !themeToggle) return;
+
+                chk.addEventListener('change', function () {
+                    // Dispara el mismo evento que usaría el usuario
+                    themeToggle.click();
+                });
+            });
+        </script>
 </body>
 
 </html>

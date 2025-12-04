@@ -79,15 +79,8 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
             </a>
+
             <ul class="navbar-item flex-row ms-lg-auto ms-0">
-
-                <li class="nav-item dropdown notification-dropdown">
-                    <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="modal"
-                        data-bs-target="#modalFechaSistema">
-                        <img src="src/assets/img/calendario.png" class="up-object" width="24" height="40">
-                    </a>
-                </li>
-
                 <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -102,37 +95,17 @@
                         <div class="user-profile-section">
                             <div class="media mx-auto">
                                 <div class="media-body">
-                                    <h5>Martin Salazar</h5>
-                                    <p class="text-carabineros">Programador</p>
+                                    <h5 class="text-default">Martin Salazar</h5>
+                                    <p>Cargo: Admin.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown-item">
-                            <a href="javascript:void(0);" class="nav-link theme-toggle">
-                                <div
-                                    class="switch form-switch-custom switch-inline form-switch-primary form-switch-custom inner-icon-toggle">
-                                    <div class="input-checkbox">
-                                        <span class="switch-chk-label label-left"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M6.995 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007-2.246-5.007-5.007-5.007S6.995 9.239 6.995 12zM11 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2H2zm17 0h3v2h-3zM5.637 19.778l-1.414-1.414 2.121-2.121 1.414 1.414zM16.242 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.344 7.759 4.223 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z">
-                                                </path>
-                                            </svg></span>
-                                        <input class="switch-input" type="checkbox" role="switch"
-                                            id="form-custom-switch-inner-icon" checked>
-                                        <span class="switch-chk-label label-right"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z">
-                                                </path>
-                                            </svg></span>
-                                    </div>
-                                    <span>Dark/Light</span>
-                                </div>
-                            </a>
+
+                        <div class="form-check form-switch form-check-inline form-switch-dark theme-toggle">
+                            <input class="form-check-input" type="checkbox" role="switch" id="form-switch-dark">
+                            <label class="form-check-label" for="form-switch-dark">Oscuro</label>
                         </div>
+
                         <div class="dropdown-item">
                             <a href="user-profile.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -253,7 +226,8 @@
                                 </svg>
                             </div>
                         </a>
-                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                        <ul class="collapse submenu list-unstyled active" id="components"
+                            data-bs-parent="#accordionExample">
                             <li>
                                 <a href="./contrato.html"> Contratos </a>
                             </li>
@@ -1453,11 +1427,21 @@
     <script src="../src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
     <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>
 
-
-
     <!-- DataTables Responsive JS -->
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const chk = document.querySelector('.form-check-input.dark-mode');
+            const themeToggle = document.querySelector('.theme-toggle');
 
+            if (!chk || !themeToggle) return;
+
+            chk.addEventListener('change', function () {
+                // Dispara el mismo evento que usaría el usuario
+                themeToggle.click();
+            });
+        });
+    </script>
 
 </body>
 
