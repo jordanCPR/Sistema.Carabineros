@@ -1441,6 +1441,28 @@ body.alt-menu #content {
   box-shadow: 0 0 0 0 #0a1c08;
 }
 
+.btn-carabineros-light{
+  transition: all 0.8s;
+  background-color: #2b4018 !important;
+  border:none;
+  color: white;
+  box-shadow: 0 0 0 0 #0a1c08;
+}
+
+.btn-carabineros-ultra-light{
+  transition: all 0.8s;
+  background-color: #d7e8ca !important;
+  color: #2b4018;
+  border: 1px solid #2b4018;
+  box-shadow: 0 0 0 0 #2b4018;
+}
+
+.btn-carabineros-light:hover {
+  color: white;
+  box-shadow: 0 4px 8px 0 #0a1c08;
+  transform: translate3d(2px, 2px, 0);
+}
+
 .btn-carabineros:hover {
   color: white;
   box-shadow: 0 4px 8px 0 #0a1c08;
