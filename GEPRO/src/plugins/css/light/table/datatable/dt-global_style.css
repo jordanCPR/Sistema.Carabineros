@@ -93,7 +93,7 @@ table.dataTable > tbody > tr > td .t-dot {
 }
 
 .page-item .page-link:hover {
-  background: #191e3a;
+  background: #0a1c08;
   color: #bfc9d4;
 }
 
@@ -273,7 +273,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 .page-link {
   margin-right: 5px;
   border-radius: 8px;
-  background: rgba(0, 23, 55, 0.08);
+  background: #0a1c08;
   border: none;
   color: #888ea8;
   height: 33px;
@@ -319,7 +319,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   align-items: center;
 }
 .page-item.next:not(.disabled) .page-link, .page-item.previous:not(.disabled) .page-link {
-  background: #1b2e4b;
+  background: #0a1c08;
 }
 .page-item.next:not(.disabled) .page-link svg, .page-item.previous:not(.disabled) .page-link svg {
   color: #fff;
@@ -328,7 +328,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   width: 17px;
 }
 .page-item.active .page-link {
-  background-color: #4361ee;
+  background-color: #0a1c08;
 }
 
 #alter_pagination_next a, #alter_pagination_previous a {

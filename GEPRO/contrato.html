@@ -54,6 +54,14 @@
 
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/custom_dt_miscellaneous.css">
+
+    <link rel="stylesheet" href="src/plugins/src/sweetalerts2/sweetalerts2.css">
+
+    <link href="src/assets/css/light/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="src/plugins/css/light/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+
+    <link href="src/assets/css/dark/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="src/plugins/css/dark/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="layout-boxed">
@@ -142,7 +150,6 @@
         <div class="search-overlay"></div>
 
         <!--  BEGIN SIDEBAR  -->
-        <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
             <nav id="sidebar">
                 <div class="navbar-nav theme-brand flex-row  text-center">
@@ -153,7 +160,7 @@
                             </a>
                         </div>
                         <div class="nav-item theme-text">
-                            <a href="./index.html" class="nav-link"> GEPRO </a>
+                            <a href="./index.html" class="nav-link" id="text"> </a>
                         </div>
                     </div>
                     <div class="nav-item sidebar-toggle">
@@ -201,7 +208,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>SIGEAPER</span></div>
+                            </svg><span>Modulo SIGEAPER</span></div>
                     </li>
 
                     <li class="menu">
@@ -226,23 +233,22 @@
                                 </svg>
                             </div>
                         </a>
-                        <ul class="collapse submenu list-unstyled active" id="components"
-                            data-bs-parent="#accordionExample">
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./contrato.html"> Contratos </a>
+                                <a href="#" onclick="TipoCuenta()"> Contratos </a>
                             </li>
                         </ul>
-                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                        <!--<ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
                             <li>
                                 <a href="#"> Revista Comisario </a>
                             </li>
-                        </ul>
+                        </ul>-->
                         <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
                             <li>
                                 <a href="#"> Gestión de Beneficios </a>
                             </li>
                         </ul>
-                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                        <!--<ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
                             <li>
                                 <a href="#"> Reconocimientos</a>
                             </li>
@@ -282,7 +288,7 @@
                             <li>
                                 <a href="#"> Condición de Servicios</a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </li>
 
                     <li class="menu">
@@ -331,12 +337,59 @@
                         </a>
                     </li>
 
+                    <li class="menu">
+                        <a href="#configSegeaper" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-settings">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                    </path>
+                                </svg>
+                                <span>Configuraciones</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="configSegeaper"
+                            data-bs-parent="#accordionExample">
+                            <li class="menu">
+                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modalFechaSistema"
+                                    class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>Fecha</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
                     <li class="menu menu-heading">
                         <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>SISPER</span>
+                            </svg><span>Modulo SISPER</span>
                         </div>
                     </li>
 
@@ -345,7 +398,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>SIIPER</span>
+                            </svg><span>Modulo SIIPER</span>
                         </div>
                     </li>
 
@@ -370,7 +423,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>RIPER</span>
+                            </svg><span>Modulo RIPER</span>
                         </div>
                     </li>
 
@@ -380,22 +433,6 @@
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                             </svg><span>CONFIGURACIONES</span></div>
-                    </li>
-                    <li class="menu">
-                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modalFechaSistema"
-                            class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-calendar">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg>
-                                <span>Fecha</span>
-                            </div>
-                        </a>
                     </li>
                     <li class="menu">
                         <a href="#users" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -426,7 +463,6 @@
                 </ul>
             </nav>
         </div>
-        <!--  END SIDEBAR  -->
         <!--  END SIDEBAR  -->
 
         <!--  BEGIN CONTENT AREA  -->
@@ -479,7 +515,14 @@
                                             <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
                                             <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
                                             <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                        </svg> Cargas Masiva Contratos
+                                        </svg> Cargas Masiva Contratos <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-arrow-right-circle">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 16 16 12 12 8"></polyline>
+                                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                                        </svg>
                                     </p>
                                 </div>
                             </div>
@@ -496,7 +539,14 @@
                                             class="feather feather-unlock">
                                             <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                                             <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
-                                        </svg> Autoriza Ingreso de Contratos
+                                        </svg> Autoriza Ingreso de Contratos <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-arrow-right-circle">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 16 16 12 12 8"></polyline>
+                                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                                        </svg>
                                     </p>
                                 </div>
                             </div>
@@ -513,7 +563,16 @@
                                                 d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
                                             </path>
                                             <polyline points="22,6 12,13 2,6"></polyline>
-                                        </svg> Modifica Correo Funcionario</p>
+                                        </svg> Modifica Correo Funcionario
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-arrow-right-circle">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 16 16 12 12 8"></polyline>
+                                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                                        </svg>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -542,7 +601,7 @@
                                 </div>
                                 <div class="widget-content widget-content-area">
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-xl-3 col-md-6 col-sm-12">
                                             <div class="form-group">
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text">
@@ -559,7 +618,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-3">
+                                        <div class="col-xl-3 col-mb-6 col-sm-12">
                                             <div class="form-group">
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text">
@@ -579,7 +638,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-3">
+                                        <div class="col-xl-3 col-mb-6 col-sm-12">
                                             <div class="form-group">
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text">
@@ -595,881 +654,1151 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-2">
-                                            <button type="button" class="btn btn-carabineros"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-log-out">
-                                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                                                    <polyline points="16 17 21 12 16 7"></polyline>
-                                                    <line x1="21" y1="12" x2="9" y2="12"></line>
-                                                </svg> Ejercer</button>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="bs-stepper stepper-vertical-icons vertical linear">
-                                        <div class="bs-stepper-header" role="tablist">
-                                            <div class="step" data-target="#verticalWithIconsStep-one">
-                                                <button type="button" class="step-trigger" role="tab">
-                                                    <span class="bs-stepper-circle"><svg
+                                        <div class="col-xl-3 col-md-6 col-sm-12">
+                                            <div class="mb-3">
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                    <button type="button" class="btn btn-carabineros"><svg
                                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                             stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-send">
-                                                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                                        </svg></span><br>
-                                                    <span class="bs-stepper-label">Personal</span>
-                                                </button>
-                                            </div>
-                                            <div class="line"></div>
-                                            <div class="step" data-target="#verticalWithIconsStep-two">
-                                                <button type="button" class="step-trigger" role="tab">
-                                                    <span class="bs-stepper-circle"><svg
+                                                            stroke-linejoin="round" class="feather feather-log-out">
+                                                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                                            <polyline points="16 17 21 12 16 7"></polyline>
+                                                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                                                        </svg> Ejercer
+                                                    </button>
+                                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                        data-bs-target="#modalListadoFuncionario"><svg
                                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                             stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-send">
-                                                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                                        </svg></span>
-                                                    <span class="bs-stepper-label">Contractual</span>
-                                                </button>
-                                            </div>
-                                            <div class="line"></div>
-                                            <div class="step" data-target="#verticalWithIconsStep-three">
-                                                <button type="button" class="step-trigger" role="tab">
-                                                    <span class="bs-stepper-circle"><svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-send">
-                                                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                                        </svg></span>
-                                                    <span class="bs-stepper-label">Resolución</span>
-                                                </button>
-                                            </div>
-                                            <div class="line"></div>
-                                            <div class="step" data-target="#verticalWithIconsStep-four">
-                                                <button type="button" class="step-trigger" role="tab">
-                                                    <span class="bs-stepper-circle"><svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-send">
-                                                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                                        </svg></span>
-                                                    <span class="bs-stepper-label">Previsión</span>
-                                                </button>
-                                            </div>
-                                            <div class="line"></div>
-                                            <div class="step" data-target="#verticalWithIconsStep-five">
-                                                <button type="button" class="step-trigger" role="tab">
-                                                    <span class="bs-stepper-circle"><svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-map-pin">
-                                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z">
-                                                            </path>
-                                                            <circle cx="12" cy="10" r="3"></circle>
-                                                        </svg></span>
-                                                    <span class="bs-stepper-label">Educacional</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="bs-stepper-content">
-                                            <div id="verticalWithIconsStep-one" class="content" role="tabpanel">
-                                                <form class="row g-3">
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">Código
-                                                            Funcionario</label>
-                                                        <input type="text"
-                                                            class="form-control input-carabineros form-control-sm"
-                                                            id="defaultInputAddress">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress2"
-                                                            class="form-label">Nacionalidad</label>
-                                                        <select class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                            <option>Chilena</option>
-                                                            <option>Extranjera</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="defaultInputCity" class="form-label">Primer
-                                                            Apellido</label>
-                                                        <input type="text"
-                                                            class="form-control input-carabineros form-control-sm"
-                                                            id="defaultInputCity">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="defaultInputState" class="form-label">Segundo
-                                                            Nombre</label>
-                                                        <input type="text"
-                                                            class="form-control input-carabineros form-control-sm"
-                                                            id="defaultInputCity">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="defaultInputZip" class="form-label">Primer
-                                                            Nombre</label>
-                                                        <input type="text"
-                                                            class="form-control input-carabineros form-control-sm"
-                                                            id="defaultInputZip">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="defaultInputZip" class="form-label">Segundo
-                                                            Nombre</label>
-                                                        <input type="text"
-                                                            class="form-control input-carabineros form-control-sm"
-                                                            id="defaultInputZip">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="defaultInputZip" class="form-label">Fecha de
-                                                            Nacimiento</label>
-                                                        <input type="date"
-                                                            class="form-control input-carabineros form-control-sm"
-                                                            id="defaultInputZip">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="defaultInputZip" class="form-label">Género</label>
-                                                        <select class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                            <option>Masculino</option>
-                                                            <option>Femenino</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="defaultInputZip" class="form-label">Estado
-                                                            civil</label>
-                                                        <select class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                            <option>Soltero</option>
-                                                            <option>Casado</option>
-                                                            <option>Viudo</option>
-                                                            <option>Divorciado</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <label for="defaultInputZip" class="form-label">Correo</label>
-                                                        <input type="text"
-                                                            class="form-control input-carabineros form-control-sm"
-                                                            id="defaultInputZip">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="defaultInputZip" class="form-label">Tipo</label>
-                                                        <select class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                            <option>Funcionario</option>
-                                                            <option>Contratista</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="defaultInputZip" class="form-label">Grado</label>
-                                                        <select class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                            <option>16</option>
-                                                            <option>14</option>
-                                                            <option>12</option>
-                                                            <option>9</option>
-                                                            <option>7</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="defaultInputZip"
-                                                            class="form-label">Escalafón</label>
-                                                        <select class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                </form>
-                                                <div class="button-action mt-5">
-                                                    <button
-                                                        class="btn btn-carabineros btn-nxt mi-boton-animado">Siguiente
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-arrow-right-circle">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <polyline points="12 16 16 12 12 8"></polyline>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg></button>
-                                                </div>
-                                            </div>
-
-
-
-
-                                            <div id="verticalWithIconsStep-two" class="content" role="tabpanel">
-                                                <form class="row g-3">
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress2" class="form-label">Fecha
-                                                            Contrato</label>
-                                                        <input type="date" class="form-control form-control-sm">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress"
-                                                            class="form-label">Categoria</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-
-
-
-
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress"
-                                                            class="form-label">Cargo</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">Modalidad
-                                                            Empleo</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">Jornada
-                                                            Horario</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">Alta
-                                                            Repartición</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">Unidad
-                                                            Desempeño</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">Región
-                                                            Desempeño</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">Comuna
-                                                            Desempeño</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">Ciudad
-                                                            Desempeño</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-
-                                                </form>
-                                                <div class="button-action mt-5">
-                                                    <button class="btn btn-carabineros btn-prev me-3"><svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-arrow-left-circle">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <polyline points="12 8 8 12 12 16"></polyline>
-                                                            <line x1="16" y1="12" x2="8" y2="12"></line>
-                                                        </svg> Anterior</button>
-                                                    <button class="btn btn-carabineros btn-nxt">Siguiente <svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-arrow-right-circle">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <polyline points="12 16 16 12 12 8"></polyline>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg></button>
-                                                </div>
-                                            </div>
-
-                                            <div id="verticalWithIconsStep-three" class="content" role="tabpanel">
-                                                <form class="row g-3">
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">Tipo
-                                                            Documento</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress2" class="form-label">Nro
-                                                            Documento</label>
-                                                        <input type="text" class="form-control form-control-sm">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputCity" class="form-label">Fecha
-                                                            Documento</label>
-                                                        <input type="date" class="form-control form-control-sm">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputCity" class="form-label">Adjuntar
-                                                            Documento</label>
-                                                        <input type="file" class="form-control form-control-sm">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label class="form-label">Descripción Básica</label>
-                                                        <textarea class="form-control form-control-sm"
-                                                            rows="10"></textarea>
-                                                    </div>
-                                                </form>
-                                                <div class="button-action mt-5">
-                                                    <button class="btn btn-carabineros btn-prev me-3"><svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-arrow-left-circle">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <polyline points="12 8 8 12 12 16"></polyline>
-                                                            <line x1="16" y1="12" x2="8" y2="12"></line>
-                                                        </svg> Anterior</button>
-                                                    <button class="btn btn-carabineros btn-nxt">Siguiente <svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-arrow-right-circle">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <polyline points="12 16 16 12 12 8"></polyline>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg></button>
-                                                </div>
-                                            </div>
-
-                                            <div id="verticalWithIconsStep-four" class="content" role="tabpanel">
-                                                <form class="row g-3">
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">
-                                                            Tipo Previsión
-                                                        </label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">
-                                                            Pensión
-                                                        </label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">
-                                                            Salud
-                                                        </label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                </form>
-                                                <div class="button-action mt-5">
-                                                    <button class="btn btn-carabineros btn-prev me-3"><svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-arrow-left-circle">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <polyline points="12 8 8 12 12 16"></polyline>
-                                                            <line x1="16" y1="12" x2="8" y2="12"></line>
-                                                        </svg> Anterior</button>
-                                                    <button class="btn btn-carabineros btn-nxt">Siguiente <svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-arrow-right-circle">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <polyline points="12 16 16 12 12 8"></polyline>
-                                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                        </svg></button>
-                                                </div>
-                                            </div>
-
-                                            <div id="verticalWithIconsStep-five" class="content" role="tabpanel">
-                                                <form class="row g-3">
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress" class="form-label">Tipo
-                                                            Estudio</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputAddress2" class="form-label">Casa
-                                                            Estudio</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputCity" class="form-label">Fecha
-                                                            Inicio</label>
-                                                        <input type="date" class="form-control form-control-sm">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="defaultInputCity" class="form-label">Fecha
-                                                            Fin</label>
-                                                        <input type="date" class="form-control form-control-sm">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label for="defaultInputState" class="form-label">Estado
-                                                            Estudio</label>
-                                                        <select id="defaultInputState"
-                                                            class="form-select form-select-sm">
-                                                            <option selected disabled>--SELECCIONE--/option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label class="form-label">Descripción Básica</label>
-                                                        <textarea class="form-control form-control-sm"
-                                                            rows="10"></textarea>
-                                                    </div>
-                                                </form>
-
-                                                <div class="button-action mt-3">
-                                                    <button class="btn btn-carabineros btn-prev me-3"><svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-arrow-left-circle">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <polyline points="12 8 8 12 12 16"></polyline>
-                                                            <line x1="16" y1="12" x2="8" y2="12"></line>
-                                                        </svg> Anterior</button>
-                                                    <button class="btn btn-info me-3"><svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-trash">
-                                                            <polyline points="3 6 5 6 21 6"></polyline>
-                                                            <path
-                                                                d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                            </path>
-                                                        </svg> Limpiar</button>
-                                                    <button class="btn btn-warning btn-me-3">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-save">
-                                                            <path
-                                                                d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z">
-                                                            </path>
-                                                            <polyline points="17 21 17 13 7 13 7 21"></polyline>
-                                                            <polyline points="7 3 7 8 15 8"></polyline>
-                                                        </svg>
-                                                        Grabar
+                                                            stroke-linejoin="round" class="feather feather-log-out">
+                                                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                                            <polyline points="16 17 21 12 16 7"></polyline>
+                                                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                                                        </svg> Listado
                                                     </button>
                                                 </div>
                                             </div>
+
+                                        </div>
+                                        <hr>
+                                        <div class="bs-stepper stepper-vertical-icons vertical linear">
+                                            <div class="bs-stepper-header" role="tablist">
+                                                <div class="step" data-target="#verticalWithIconsStep-one">
+                                                    <button type="button" class="step-trigger" role="tab">
+                                                        <span class="bs-stepper-circle"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-send">
+                                                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                                            </svg></span><br>
+                                                        <span class="bs-stepper-label">Personal</span>
+                                                    </button>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="step" data-target="#verticalWithIconsStep-two">
+                                                    <button type="button" class="step-trigger" role="tab">
+                                                        <span class="bs-stepper-circle"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-send">
+                                                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                                            </svg></span>
+                                                        <span class="bs-stepper-label">Contractual</span>
+                                                    </button>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="step" data-target="#verticalWithIconsStep-three">
+                                                    <button type="button" class="step-trigger" role="tab">
+                                                        <span class="bs-stepper-circle"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-send">
+                                                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                                            </svg></span>
+                                                        <span class="bs-stepper-label">Previsión</span>
+                                                    </button>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="step" data-target="#verticalWithIconsStep-four">
+                                                    <button type="button" class="step-trigger" role="tab">
+                                                        <span class="bs-stepper-circle"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-map-pin">
+                                                                <path
+                                                                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z">
+                                                                </path>
+                                                                <circle cx="12" cy="10" r="3"></circle>
+                                                            </svg></span>
+                                                        <span class="bs-stepper-label">Educacional</span>
+                                                    </button>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="step" data-target="#verticalWithIconsStep-five">
+                                                    <button type="button" class="step-trigger" role="tab">
+                                                        <span class="bs-stepper-circle"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-send">
+                                                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                                            </svg></span>
+                                                        <span class="bs-stepper-label">Resolución</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="bs-stepper-content">
+                                                <div id="verticalWithIconsStep-one" class="content" role="tabpanel">
+                                                    <form class="row g-3">
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">Código
+                                                                Funcionario</label>
+                                                            <input type="text"
+                                                                class="form-control input-carabineros form-control-sm"
+                                                                id="defaultInputAddress">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress2"
+                                                                class="form-label">Nacionalidad</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                                <option>Chilena</option>
+                                                                <option>Extranjera</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputCity" class="form-label">Primer
+                                                                Apellido</label>
+                                                            <input type="text"
+                                                                class="form-control input-carabineros form-control-sm"
+                                                                id="defaultInputCity">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputState" class="form-label">Segundo
+                                                                Apellido</label>
+                                                            <input type="text"
+                                                                class="form-control input-carabineros form-control-sm"
+                                                                id="defaultInputCity">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputZip" class="form-label">Primer
+                                                                Nombre</label>
+                                                            <input type="text"
+                                                                class="form-control input-carabineros form-control-sm"
+                                                                id="defaultInputZip">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputZip" class="form-label">Segundo
+                                                                Nombre</label>
+                                                            <input type="text"
+                                                                class="form-control input-carabineros form-control-sm"
+                                                                id="defaultInputZip">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="defaultInputZip" class="form-label">Fecha de
+                                                                Nacimiento</label>
+                                                            <input type="date"
+                                                                class="form-control input-carabineros form-control-sm"
+                                                                id="defaultInputZip">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="defaultInputZip"
+                                                                class="form-label">Género</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                                <option>Masculino</option>
+                                                                <option>Femenino</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="defaultInputZip" class="form-label">Estado
+                                                                civil</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                                <option>Soltero</option>
+                                                                <option>Casado</option>
+                                                                <option>Viudo</option>
+                                                                <option>Divorciado</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <label for="defaultInputZip"
+                                                                class="form-label">Correo</label>
+                                                            <input type="text"
+                                                                class="form-control input-carabineros form-control-sm"
+                                                                id="defaultInputZip" placeholder="XXXX@XXX.XX">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputZip" class="form-label">Tipo
+                                                                Contrato</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                                <option>Funcionario</option>
+                                                                <option>Contratista</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputZip"
+                                                                class="form-label">Nombramiento</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputZip"
+                                                                class="form-label">Escalafón</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputZip"
+                                                                class="form-label">Grado</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                                <option>16</option>
+                                                                <option>14</option>
+                                                                <option>12</option>
+                                                                <option>9</option>
+                                                                <option>7</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputZip" class="form-label">Monto
+                                                                RGU</label>
+                                                            <input type="number"
+                                                                class="form-control input-carabineros form-control-sm"
+                                                                id="defaultInputZip" placeholder="0">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputZip" class="form-label">Tipo</label>
+                                                            <select class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                                <option>16</option>
+                                                                <option>14</option>
+                                                                <option>12</option>
+                                                                <option>9</option>
+                                                                <option>7</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="defaultInputZip"
+                                                                class="form-label">Horas</label>
+                                                            <input type="number"
+                                                                class="form-control input-carabineros form-control-sm"
+                                                                id="defaultInputZip" placeholder="0">
+                                                        </div>
+                                                    </form>
+                                                    <div class="button-action mt-5">
+                                                        <button
+                                                            class="btn btn-carabineros btn-nxt mi-boton-animado">Siguiente
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-arrow-right-circle">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <polyline points="12 16 16 12 12 8"></polyline>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+
+                                                <div id="verticalWithIconsStep-two" class="content" role="tabpanel">
+                                                    <form class="row g-3">
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress2" class="form-label">Fecha
+                                                                Contrato</label>
+                                                            <input type="date" class="form-control form-control-sm">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress"
+                                                                class="form-label">Categoria</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress"
+                                                                class="form-label">Cargo</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress"
+                                                                class="form-label">Modalidad
+                                                                Empleo</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">Jornada
+                                                                Horario</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">Alta
+                                                                Repartición</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">Unidad
+                                                                Desempeño</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">Región
+                                                                Desempeño</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">Comuna
+                                                                Desempeño</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">Ciudad
+                                                                Desempeño</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </form>
+                                                    <div class="button-action mt-5">
+                                                        <button class="btn btn-carabineros btn-prev me-3"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-arrow-left-circle">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <polyline points="12 8 8 12 12 16"></polyline>
+                                                                <line x1="16" y1="12" x2="8" y2="12"></line>
+                                                            </svg> Anterior</button>
+                                                        <button class="btn btn-carabineros btn-nxt">Siguiente <svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-arrow-right-circle">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <polyline points="12 16 16 12 12 8"></polyline>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+
+                                                <div id="verticalWithIconsStep-three" class="content" role="tabpanel">
+                                                    <form class="row g-3">
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">
+                                                                Tipo Previsión
+                                                            </label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">
+                                                                Pensión
+                                                            </label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">
+                                                                Salud
+                                                            </label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">
+                                                                Salud Moneda
+                                                            </label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>
+                                                    <div class="button-action mt-5">
+                                                        <button class="btn btn-carabineros btn-prev me-3"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-arrow-left-circle">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <polyline points="12 8 8 12 12 16"></polyline>
+                                                                <line x1="16" y1="12" x2="8" y2="12"></line>
+                                                            </svg> Anterior</button>
+                                                        <button class="btn btn-carabineros btn-nxt">Siguiente <svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-arrow-right-circle">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <polyline points="12 16 16 12 12 8"></polyline>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+
+                                                <div id="verticalWithIconsStep-four" class="content" role="tabpanel">
+                                                    <form class="row g-3">
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">Tipo
+                                                                Estudio</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress2" class="form-label">Casa
+                                                                Estudio</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label">Fecha
+                                                                Inicio</label>
+                                                            <input type="date" class="form-control form-control-sm">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label">Fecha
+                                                                Fin</label>
+                                                            <input type="date" class="form-control form-control-sm">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <label for="defaultInputState" class="form-label">Estado
+                                                                Estudio</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--/option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <label class="form-label">Descripción Básica</label>
+                                                            <textarea class="form-control form-control-sm"
+                                                                rows="10"></textarea>
+                                                        </div>
+                                                    </form>
+                                                    <div class="button-action mt-5">
+                                                        <button class="btn btn-carabineros btn-prev me-3"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-arrow-left-circle">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <polyline points="12 8 8 12 12 16"></polyline>
+                                                                <line x1="16" y1="12" x2="8" y2="12"></line>
+                                                            </svg> Anterior</button>
+                                                        <button class="btn btn-carabineros btn-nxt">Siguiente <svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-arrow-right-circle">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <polyline points="12 16 16 12 12 8"></polyline>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+
+                                                <div id="verticalWithIconsStep-five" class="content" role="tabpanel">
+                                                    <form class="row g-3">
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress" class="form-label">Tipo
+                                                                Documento</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputAddress2" class="form-label">Nro
+                                                                Documento</label>
+                                                            <input type="text" class="form-control form-control-sm">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label">Fecha
+                                                                Documento</label>
+                                                            <input type="date" class="form-control form-control-sm">
+                                                        </div>
+
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label">Fecha
+                                                                Contrato</label>
+                                                            <input type="date" class="form-control form-control-sm">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label">Tipo
+                                                                Profesor</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity"
+                                                                class="form-label">Condición</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label"> Estado
+                                                                Profesor</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label">
+                                                                Categoria</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label">
+                                                                Titulo</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label"> Calidad
+                                                                Docente</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label"> Grado
+                                                                Jerárquico</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label">
+                                                                Asignatura</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label"> Tipo
+                                                                Curso</label>
+                                                            <select id="defaultInputState"
+                                                                class="form-select form-select-sm">
+                                                                <option selected disabled>--SELECCIONE--</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label">
+                                                                Curso</label>
+                                                            <input type="date" class="form-control form-control-sm">
+                                                        </div>
+
+                                                        <div class="col-6">
+                                                            <label for="defaultInputCity" class="form-label">Adjuntar
+                                                                Documento</label>
+                                                            <input type="file" class="form-control form-control-sm">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <label class="form-label">Observación</label>
+                                                            <textarea class="form-control form-control-sm"
+                                                                rows="10"></textarea>
+                                                        </div>
+                                                    </form>
+
+                                                    <div class="button-action mt-3">
+                                                        <button class="btn btn-carabineros btn-prev me-3"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-arrow-left-circle">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <polyline points="12 8 8 12 12 16"></polyline>
+                                                                <line x1="16" y1="12" x2="8" y2="12"></line>
+                                                            </svg> Anterior</button>
+                                                        <button class="btn btn-info me-3"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-trash">
+                                                                <polyline points="3 6 5 6 21 6"></polyline>
+                                                                <path
+                                                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                                                </path>
+                                                            </svg> Limpiar</button>
+                                                        <button class="btn btn-warning btn-me-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-save">
+                                                                <path
+                                                                    d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z">
+                                                                </path>
+                                                                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                                                                <polyline points="7 3 7 8 15 8"></polyline>
+                                                            </svg>
+                                                            Grabar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row layout-top-spacing container-carabinero" id="cancel-row">
+                            <div class="col-lg-12 layout-spacing">
+                                <div class="statbox widget box box-shadow">
+                                    <section class="footer-wrapper p-3 mt-0" style="background: #d7e7ca;">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-3">
+                                                    <img src="src/assets/img/logo.png" class="up-object"
+                                                        alt="Carabineros de Chile" width="70" height="70">
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    © 2026 Copyright: <a class="text-reset fw-bold"
+                                                        href="https://mdbootstrap.com/">Carabineros de Chile</a> </div>
+                                                <div class="col-md-3 text-md-end">
+                                                    <img src="src/assets/img/logo-departamento.png" class="up-object"
+                                                        alt="Carabineros de Chile" width="70" height="70">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- MODALES -->
+                <div class="modal fade" id="modalCargaMasivaContratos" tabindex="-1" role="dialog"
+                    aria-labelledby="modalCargaMasivaContratosTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalCargaMasivaContratosTitle"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-database">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    </svg> Cargas Masivas de Contratos</h5>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <label class="form-label">Tipo Carga</label>
+                                            <select class="form-select">
+                                                <option>Contratos - Carabineros Alumnos</option>
+                                                <option>Contratos - Carabineros Aspirantes</option>
+                                                <option>Contratos - Carabineros PNI Gº17</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label">Adjutar Nómina</label>
+                                            <input type="file" class="form-control">
                                         </div>
                                     </div>
-
-                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning" data-bs-dismiss="modal"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-x-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                                    </svg> Cerrar</button>
+                                <button type="button" class="btn btn-carabineros"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-database">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    </svg> Cargar Nómina</button>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row layout-top-spacing container-carabinero" id="cancel-row">
-                        <div class="col-lg-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <section class="footer-wrapper p-3 mt-0" style="background: #d7e7ca;">
-                                    <div class="container">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-3">
-                                                <img src="src/assets/img/logo.png" class="up-object"
-                                                    alt="Carabineros de Chile" width="70" height="70">
-                                            </div>
-                                            <div class="col-md-6 text-center">
-                                                © 2026 Copyright: <a class="text-reset fw-bold"
-                                                    href="https://mdbootstrap.com/">Carabineros de Chile</a> </div>
-                                            <div class="col-md-3 text-md-end">
-                                                <img src="src/assets/img/logo-departamento.png" class="up-object"
-                                                    alt="Carabineros de Chile" width="70" height="70">
-                                            </div>
+
+                <div class="modal fade" id="modalIngresoAutorizaContrato" tabindex="-1" role="dialog"
+                    aria-labelledby="modalIngresoAutorizaContratoTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalIngresoAutorizaContratoTitle"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-database">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    </svg> Consulta de Datos</h5>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <label class="form-label">Numero Documento</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" disabled>
                                         </div>
                                     </div>
-                                </section>
+                                    <div class="row">
+                                        <div class="col-4 mb-3">
+                                            <label class="form-label">Tipo Funcionario</label>
+                                            <select class="form-select">
+                                                <option>I - Civiles</option>
+                                                <option>J - Jornales</option>
+                                                <option>M - Medicos</option>
+                                                <option>P - Profesores</option>
+                                                <option>U - Uniformados</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <label class="form-label">Estado</label>
+                                            <select class="form-select">
+                                                <option>DIGITADO</option>
+                                                <option>VALIDADO</option>
+                                                <option>RECHAZADO</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <label class="form-lab">Cant. Registros</label>
+                                            <select class="form-select" name="" id="">
+                                                <option>25</option>
+                                                <option>50</option>
+                                                <option>75</option>
+                                                <option>100</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning" data-bs-dismiss="modal"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-x-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                                    </svg> Cerrar</button>
+                                <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-database">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    </svg> Rechazar</button>
+                                <button type="button" class="btn btn-carabineros"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-database">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    </svg> Validar</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
 
 
-
-            <!-- MODALES -->
-            <div class="modal fade" id="modalCargaMasivaContratos" tabindex="-1" role="dialog"
-                aria-labelledby="modalCargaMasivaContratosTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalCargaMasivaContratosTitle"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-database">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg> Cargas Masivas de Contratos</h5>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="row">
-                                    <div class="col-12 mb-3">
-                                        <label class="form-label">Tipo Carga</label>
-                                        <select class="form-select">
-                                            <option>Contratos - Carabineros Alumnos</option>
-                                            <option>Contratos - Carabineros Aspirantes</option>
-                                            <option>Contratos - Carabineros PNI Gº17</option>
-                                        </select>
+                <div class="modal fade" id="modalFechaSistema" tabindex="-1" role="dialog"
+                    aria-labelledby="modalFechaSistemaTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalFechaSistemaTitle"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-calendar">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg> Cambio de Fecha</h5>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="form-label">Año</label>
+                                            <input type="number" class="form-control" placeholder="XXXX">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">Mes</label>
+                                            <select class="form-select">
+                                                <option>1.- Enero</option>
+                                                <option>2.- Febrero</option>
+                                                <option>3.- Marzo</option>
+                                                <option>4.- Abril</option>
+                                                <option>5.- Mayo</option>
+                                                <option>6.- Junio</option>
+                                                <option>7.- Julio</option>
+                                                <option>8.- Agosto</option>
+                                                <option>9.- Septiembre</option>
+                                                <option>10.- Octubre</option>
+                                                <option>11.- Noviembre</option>
+                                                <option>12.- Diciembre</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col-12">
-                                        <label class="form-label">Adjutar Nómina</label>
-                                        <input type="file" class="form-control">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-warning" data-bs-dismiss="modal"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-x-circle">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="15" y1="9" x2="9" y2="15"></line>
-                                    <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg> Cerrar</button>
-                            <button type="button" class="btn btn-carabineros"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-database">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg> Cargar Nómina</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="modal fade" id="modalIngresoAutorizaContrato" tabindex="-1" role="dialog"
-                aria-labelledby="modalIngresoAutorizaContratoTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalIngresoAutorizaContratoTitle"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-database">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg> Consulta de Datos</h5>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="row">
-                                    <div class="col-6 mb-3">
-                                        <label class="form-label">Numero Documento</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-6 mb-3">
-                                        <label class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-4 mb-3">
-                                        <label class="form-label">Tipo Funcionario</label>
-                                        <select class="form-select">
-                                            <option>I - Civiles</option>
-                                            <option>J - Jornales</option>
-                                            <option>M - Medicos</option>
-                                            <option>P - Profesores</option>
-                                            <option>U - Uniformados</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-4">
-                                        <label class="form-label">Estado</label>
-                                        <select class="form-select">
-                                            <option>DIGITADO</option>
-                                            <option>VALIDADO</option>
-                                            <option>RECHAZADO</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-4">
-                                        <label class="form-lab">Cant. Registros</label>
-                                        <select class="form-select" name="" id="">
-                                            <option>25</option>
-                                            <option>50</option>
-                                            <option>75</option>
-                                            <option>100</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-warning" data-bs-dismiss="modal"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-x-circle">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="15" y1="9" x2="9" y2="15"></line>
-                                    <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg> Cerrar</button>
-                            <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-database">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg> Rechazar</button>
-                            <button type="button" class="btn btn-carabineros"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-database">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg> Validar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="modal fade" id="modalFechaSistema" tabindex="-1" role="dialog"
-                aria-labelledby="modalFechaSistemaTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalFechaSistemaTitle"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-calendar">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg> Cambio de Fecha</h5>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <label class="form-label">Año</label>
-                                        <input type="number" class="form-control" placeholder="XXXX">
-                                    </div>
-                                    <div class="col-6">
-                                        <label class="form-label">Mes</label>
-                                        <select class="form-select">
-                                            <option>1.- Enero</option>
-                                            <option>2.- Febrero</option>
-                                            <option>3.- Marzo</option>
-                                            <option>4.- Abril</option>
-                                            <option>5.- Mayo</option>
-                                            <option>6.- Junio</option>
-                                            <option>7.- Julio</option>
-                                            <option>8.- Agosto</option>
-                                            <option>9.- Septiembre</option>
-                                            <option>10.- Octubre</option>
-                                            <option>11.- Noviembre</option>
-                                            <option>12.- Diciembre</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-warning" data-bs-dismiss="modal"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-x-circle">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="15" y1="9" x2="9" y2="15"></line>
-                                    <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg> Cerrar</button>
-                            <button type="button" class="btn btn-carabineros"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-log-out">
-                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                                    <polyline points="16 17 21 12 16 7"></polyline>
-                                    <line x1="21" y1="12" x2="9" y2="12"></line>
-                                </svg> Cambiar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="modal fade" id="modalCambioCorreo" tabindex="-1" aria-labelledby="modalCambioCorreoTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- MODAL XL -->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalCambioCorreoTitle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-mail">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                    </path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                                Modifica correo electrónico Funcionario
-                            </h5>
-                        </div>
-
-                        <div class="modal-body">
-                            <div class="table-responsive"> <!-- AQUI SE HACE RESPONSIVE -->
-                                <table id="individual-col-search" class="table table-striped table-bordered nowrap"
-                                    style="width:100%">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Rut</th>
-                                            <th>DV</th>
-                                            <th>Nombre</th>
-                                            <th>Segundo Nombre</th>
-                                            <th>Apellido</th>
-                                            <th>Segundo Apellido</th>
-                                            <th class="text-center">Acción</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-center">1</td>
-                                            <td>19.419.161</td>
-                                            <td>8</td>
-                                            <td>Jordan</td>
-                                            <td>Ariel</td>
-                                            <td>Aguilera</td>
-                                            <td>Labra</td>
-                                            <td class="text-center">
-                                                <button class="btn btn-info">Cambiar Correo</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-warning" data-bs-dismiss="modal"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-x-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                                    </svg> Cerrar</button>
+                                <button type="button" class="btn btn-carabineros"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-log-out">
+                                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                        <polyline points="16 17 21 12 16 7"></polyline>
+                                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                                    </svg> Cambiar</button>
                             </div>
                         </div>
-
-                        <div class="modal-footer">
-                            <button class="btn btn-warning" data-bs-dismiss="modal">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-x-circle">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="15" y1="9" x2="9" y2="15"></line>
-                                    <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg>
-                                Cerrar
-                            </button>
-                        </div>
-
                     </div>
                 </div>
+
+
+                <div class="modal fade" id="modalCambioCorreo" tabindex="-1" aria-labelledby="modalCambioCorreoTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- MODAL XL -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalCambioCorreoTitle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-mail">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    Modifica correo electrónico Funcionario
+                                </h5>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="table-responsive"> <!-- AQUI SE HACE RESPONSIVE -->
+                                    <table class="datatable-universal table table-striped table-bordered nowrap"
+                                        style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Rut</th>
+                                                <th>DV</th>
+                                                <th>Nombre</th>
+                                                <th>Segundo Nombre</th>
+                                                <th>Apellido</th>
+                                                <th>Segundo Apellido</th>
+                                                <th class="text-center">Acción</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td>19.419.161</td>
+                                                <td>8</td>
+                                                <td>Jordan</td>
+                                                <td>Ariel</td>
+                                                <td>Aguilera</td>
+                                                <td>Labra</td>
+                                                <td class="text-center">
+                                                    <button class="btn btn-info">Cambiar Correo</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-warning" data-bs-dismiss="modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-x-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                                    </svg>
+                                    Cerrar
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modalListadoFuncionario" tabindex="-1"
+                    aria-labelledby="modalListadoFuncionarioTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- MODAL XL -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalListadoFuncionarioTitle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-user">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    Listado de Funcionarios
+                                </h5>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="table-responsive"> <!-- AQUI SE HACE RESPONSIVE -->
+                                    <table id="todos-col-search"
+                                        class="datatable-universal table table-striped table-bordered nowrap"
+                                        style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Rut</th>
+                                                <th>DV</th>
+                                                <th>Nombre</th>
+                                                <th>Segundo Nombre</th>
+                                                <th>Apellido</th>
+                                                <th>Segundo Apellido</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td>XX.XXX.XXX</td>
+                                                <td>X</td>
+                                                <td>Martin</td>
+                                                <td>Andres</td>
+                                                <td>Salas</td>
+                                                <td>XI</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-warning" data-bs-dismiss="modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-x-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                                    </svg>
+                                    Cerrar
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-
+            <!--  END CONTENT AREA  -->
 
         </div>
-        <!--  END CONTENT AREA  -->
+        <!-- END MAIN CONTAINER -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    </div>
-    <!-- END MAIN CONTAINER -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+        <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+        <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
+        <script src="src/plugins/src/waves/waves.min.js"></script>
+        <script src="layouts/semi-dark-menu/app.js"></script>
+        <script src="src/plugins/src/highlight/highlight.pack.js"></script>
+        <script src="src/assets/js/scrollspyNav.js"></script>
+        <!-- END GLOBAL MANDATORY SCRIPTS -->
 
-    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
-    <script src="src/plugins/src/waves/waves.min.js"></script>
-    <script src="layouts/semi-dark-menu/app.js"></script>
-    <script src="src/plugins/src/highlight/highlight.pack.js"></script>
-    <script src="src/assets/js/scrollspyNav.js"></script>
-    <!-- END GLOBAL MANDATORY SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+        <script src="src/plugins/src/apex/apexcharts.min.js"></script>
+        <script src="src/assets/js/dashboard/dash_1.js"></script>
+        <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-    <script src="src/plugins/src/apex/apexcharts.min.js"></script>
-    <script src="src/assets/js/dashboard/dash_1.js"></script>
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="src/plugins/src/stepper/bsStepper.min.js"></script>
+        <script src="src/plugins/src/stepper/custom-bsStepper.min.js"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
 
-    <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="src/plugins/src/stepper/bsStepper.min.js"></script>
-    <script src="src/plugins/src/stepper/custom-bsStepper.min.js"></script>
-    <!-- END PAGE LEVEL SCRIPTS -->
+        <script src="../src/plugins/src/table/datatable/datatables.js"></script>
+        <script src="../src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
+        <script src="../src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>
+        <script src="../src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
+        <script src="../src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
+        <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>
 
-    <script src="../src/plugins/src/table/datatable/datatables.js"></script>
-    <script src="../src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>
+        <!-- DataTables Responsive JS -->
+        <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
 
-    <!-- DataTables Responsive JS -->
-    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const chk = document.querySelector('.form-check-input.dark-mode');
-            const themeToggle = document.querySelector('.theme-toggle');
 
-            if (!chk || !themeToggle) return;
+        <script src="src/plugins/src/sweetalerts2/sweetalerts2.min.js"></script>
+        <script src="src/plugins/src/sweetalerts2/custom-sweetalert.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const chk = document.querySelector('.form-check-input.dark-mode');
+                const themeToggle = document.querySelector('.theme-toggle');
 
-            chk.addEventListener('change', function () {
-                // Dispara el mismo evento que usaría el usuario
-                themeToggle.click();
+                if (!chk || !themeToggle) return;
+
+                chk.addEventListener('change', function () {
+                    // Dispara el mismo evento que usaría el usuario
+                    themeToggle.click();
+                });
             });
-        });
-    </script>
+        </script>
 
+        <script>
+            function TipoCuenta() {
+                Swal.fire({
+                    title: '<form><div class="mb-3"><label for="exampleFormControlSelect1" class="form-label">Seleccionar Unidad de Trabajo</label><select class="form-select" id="exampleFormControlSelect1"><option>COP ESTE</option><option>PREF. ARICA</option><option>REVICOM</option></select></div></form>',
+                    text: "Debe seleccionar una opción para continuar",
+                    icon: 'info',
+                    showCancelButton: true,
+                    confirmButtonText: 'Aceptar!',
+                    cancelButtonText: 'Cerrar!',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = "./contrato.html";
+                    } else if (
+                        /* Read more about handling dismissals below */
+                        result.dismiss === Swal.DismissReason.cancel
+                    ) {
+                        swalWithBootstrapButtons.fire(
+                            'Cancelled',
+                            'Your imaginary file is safe :)',
+                            'error'
+                        )
+                    }
+                })
+            }
+        </script>
+
+        <script>
+            $("#text").ready(function () {
+
+                //Es un fragmento de texto extraido del periódico "El país"
+                var text = "GEPRO";
+
+                var writer = "";
+                writer.length = 0; //Limpiar el string
+                var maxLength = text.length;
+                var count = 0;
+                var speed = 3000 / maxLength; //La velocidad varía dependiendo de la cantidad de caracteres
+
+                var write = setInterval(function () {
+
+                    if (count > text.length) {
+                        clearInterval(write);
+                    }
+
+                    writer += text.charAt(count);
+                    document.getElementById("text").innerHTML = writer;
+                    count++;
+
+                }, speed);
+
+                $("#write").click(function () {
+                    clearInterval(write);
+                }); //si se pulsa en el botón limpiar el intervalo
+
+            });
+        </script>
 </body>
 
 </html>

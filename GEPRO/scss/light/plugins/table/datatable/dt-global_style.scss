@@ -317,7 +317,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 .page-link {
   margin-right: 5px;
   border-radius: 8px;
-  background: rgba(0, 23, 55, 0.08);
+  background: 0a1c08;
   border: none;
   color: #888ea8;
   height: 33px;
@@ -370,7 +370,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   }
 
   &.next:not(.disabled) .page-link, &.previous:not(.disabled) .page-link {
-    background: #1b2e4b;
+    background: #0a1c08;
   }
 
   &.next:not(.disabled) .page-link svg, &.previous:not(.disabled) .page-link svg {
