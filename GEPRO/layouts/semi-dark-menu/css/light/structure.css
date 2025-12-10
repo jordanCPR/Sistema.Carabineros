@@ -13,11 +13,13 @@ html {
   direction: ltr;
 }
 
+
+
 body {
-  color: #888ea8;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100%;
   font-size: 0.875rem;
-  background: #fafafa;
   overflow-x: hidden;
   overflow-y: auto;
   letter-spacing: 0.0312rem;
@@ -101,10 +103,6 @@ code {
 }
 
 .main-container {
-  background-image: url('../../../../src/assets/img/vectorizado4.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,6 +143,7 @@ code {
   -o-transition: margin ease-in-out 0.1s;
   transition: margin ease-in-out 0.1s;
   position: relative;
+
 }
 
 .widget {
@@ -1490,11 +1489,16 @@ body.alt-menu #content {
 }
 
 .btn-carabinero-big{
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.897);
+  box-shadow: 2px 2px 2px 0 rgb(235, 233, 233);
+  border-radius: 8px;
   transition: 0.5s all;
 }
 
 .btn-carabinero-big:hover{
-  color: white;
+  color: #e0e0e04b;
   box-shadow: 0 2px 2px 0 #e0e0e04b;
   transform: translate3d(2px, 2px, 0);
   cursor: pointer;
