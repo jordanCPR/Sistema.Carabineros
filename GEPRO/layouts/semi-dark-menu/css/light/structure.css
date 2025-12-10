@@ -101,6 +101,10 @@ code {
 }
 
 .main-container {
+  background-image: url('../../../../src/assets/img/vectorizado4.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,7 +119,6 @@ code {
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
-
 
 #container.fixed-header {
   margin-top: 56px;

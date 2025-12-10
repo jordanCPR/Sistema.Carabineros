@@ -1004,12 +1004,19 @@ window.addEventListener("load", function(){
       */
 
       // Total Visits
-      d_1C_1 = new ApexCharts(document.querySelector("#total-users"), spark1);
-      d_1C_1.render();
+      var totalUsersEl = document.querySelector("#total-users");
+      if (totalUsersEl) {
+        d_1C_1 = new ApexCharts(totalUsersEl, spark1);
+        d_1C_1.render();
+      }
 
       // Paid Visits
-      d_1C_2 = new ApexCharts(document.querySelector("#paid-visits"), spark2);
-      d_1C_2.render();
+      var paidVisitsEl = document.querySelector("#paid-visits");
+      if (paidVisitsEl) {
+        d_1C_2 = new ApexCharts(paidVisitsEl, spark2);
+        d_1C_2.render();
+      }
+      
 
       /*
           ===================================
@@ -1017,12 +1024,16 @@ window.addEventListener("load", function(){
           ===================================
       */
 
-      var d_1C_3 = new ApexCharts(
-          document.querySelector("#uniqueVisits"),
-          d_1options1
-      );
-      d_1C_3.render();
-
+      var uniqueVisitsEl = document.querySelector("#uniqueVisits");
+      var d_1C_3 = null;
+      if (uniqueVisitsEl) {
+        d_1C_3 = new ApexCharts(
+            uniqueVisitsEl,
+            d_1options1
+        );
+        d_1C_3.render();
+      }
+      
 
       /*
           ==============================
@@ -1033,28 +1044,44 @@ window.addEventListener("load", function(){
 
       // Followers
 
-      var d_1C_5 = new ApexCharts(document.querySelector("#hybrid_followers"), d_1options3);
-      d_1C_5.render()
+      var followersEl = document.querySelector("#hybrid_followers");
+      var d_1C_5 = null;
+      if (followersEl) {
+        d_1C_5 = new ApexCharts(followersEl, d_1options3);
+        d_1C_5.render();
+      }
+      
 
       // Referral
 
-      var d_1C_6 = new ApexCharts(document.querySelector("#hybrid_followers1"), d_1options4);
-      d_1C_6.render()
+      var followers1El = document.querySelector("#hybrid_followers1");
+      var d_1C_6 = null;
+      if (followers1El) {
+        d_1C_6 = new ApexCharts(followers1El, d_1options4);
+        d_1C_6.render();
+      }
+      
 
       // Engagement Rate
 
-      var d_1C_7 = new ApexCharts(document.querySelector("#hybrid_followers3"), d_1options5);
-      d_1C_7.render()
-
-
+      var followers3El = document.querySelector("#hybrid_followers3");
+      var d_1C_7 = null;
+      if (followers3El) {
+        d_1C_7 = new ApexCharts(followers3El, d_1options5);
+        d_1C_7.render();
+      }
+      
 
     /*
         =============================================
             Perfect Scrollbar | Notifications
         =============================================
     */
-    const ps = new PerfectScrollbar(document.querySelector('.mt-container'));
-
+    var mtContainer = document.querySelector('.mt-container');
+    if (mtContainer) {
+      const ps = new PerfectScrollbar(mtContainer);
+    }
+    
 
 
     /**
@@ -1063,7 +1090,8 @@ window.addEventListener("load", function(){
      * =================================================================================================
      */
 
-    document.querySelector('.theme-toggle').addEventListener('click', function() {
+    var themeToggle = document.querySelector('.theme-toggle');
+    if (themeToggle) themeToggle.addEventListener('click', function() {
 
       getcorkThemeObject = localStorage.getItem("theme");
       getParseObject = JSON.parse(getcorkThemeObject)
@@ -1085,7 +1113,7 @@ window.addEventListener("load", function(){
               ===================================
           */
       
-          d_1C_3.updateOptions({
+          if (d_1C_3) d_1C_3.updateOptions({
           grid: {
                   borderColor: '#191e3a',
               },
@@ -1100,7 +1128,7 @@ window.addEventListener("load", function(){
       
           // Followers
 
-          d_1C_5.updateOptions({
+          if (d_1C_5) d_1C_5.updateOptions({
               fill: {
                   type:"gradient",
                   gradient: {
@@ -1111,7 +1139,7 @@ window.addEventListener("load", function(){
       
           // Referral
 
-          d_1C_6.updateOptions({
+          if (d_1C_6) d_1C_6.updateOptions({
               fill: {
                   type:"gradient",
                   gradient: {
@@ -1122,7 +1150,7 @@ window.addEventListener("load", function(){
       
           // Engagement Rate
 
-          d_1C_7.updateOptions({
+          if (d_1C_7) d_1C_7.updateOptions({
               fill: {
                   type:"gradient",
                   gradient: {
@@ -1145,7 +1173,7 @@ window.addEventListener("load", function(){
               ===================================
           */
       
-          d_1C_3.updateOptions({
+          if (d_1C_3) d_1C_3.updateOptions({
           grid: {
                   borderColor: '#e0e6ed',
               },
@@ -1160,7 +1188,7 @@ window.addEventListener("load", function(){
       
           // Followers
 
-          d_1C_5.updateOptions({
+          if (d_1C_5) d_1C_5.updateOptions({
               fill: {
                   type:"gradient",
                   gradient: {
@@ -1171,7 +1199,7 @@ window.addEventListener("load", function(){
       
           // Referral
 
-          d_1C_6.updateOptions({
+          if (d_1C_6) d_1C_6.updateOptions({
               fill: {
                   type:"gradient",
                   gradient: {
@@ -1182,7 +1210,7 @@ window.addEventListener("load", function(){
       
           // Engagement Rate
 
-          d_1C_7.updateOptions({
+          if (d_1C_7) d_1C_7.updateOptions({
               fill: {
                   type:"gradient",
                   gradient: {

@@ -1,8 +1,11 @@
 // Basic message
 
-document.querySelector('.widget-content .message').addEventListener('click', function() {
-    Swal.fire('Saved succesfully')
-})
+var msgEl = document.querySelector('.widget-content .message');
+if (msgEl) {
+    msgEl.addEventListener('click', function() {
+        Swal.fire('Saved succesfully')
+    })
+}
 
 
 /**
@@ -10,7 +13,8 @@ document.querySelector('.widget-content .message').addEventListener('click', fun
  */
 
 // Center
-document.querySelector('.widget-content .default').addEventListener('click', function() {
+var defaultEl = document.querySelector('.widget-content .default');
+if (defaultEl) defaultEl.addEventListener('click', function() {
     Swal.fire({
         position: 'center',
         icon: 'success',
@@ -21,7 +25,8 @@ document.querySelector('.widget-content .default').addEventListener('click', fun
 })
 
 // Top Start
-document.querySelector('.widget-content .top-start').addEventListener('click', function() {
+var topStartEl = document.querySelector('.widget-content .top-start');
+if (topStartEl) topStartEl.addEventListener('click', function() {
     Swal.fire({
         position: 'top-start',
         icon: 'success',
@@ -32,7 +37,8 @@ document.querySelector('.widget-content .top-start').addEventListener('click', f
 })
 
 // Top End
-document.querySelector('.widget-content .top-end').addEventListener('click', function() {
+var topEndEl = document.querySelector('.widget-content .top-end');
+if (topEndEl) topEndEl.addEventListener('click', function() {
     Swal.fire({
         position: 'top-end',
         icon: 'success',
@@ -43,7 +49,8 @@ document.querySelector('.widget-content .top-end').addEventListener('click', fun
 })
 
 // Bottom Start
-document.querySelector('.widget-content .bottom-start').addEventListener('click', function() {
+var bottomStartEl = document.querySelector('.widget-content .bottom-start');
+if (bottomStartEl) bottomStartEl.addEventListener('click', function() {
     Swal.fire({
         position: 'bottom-start',
         icon: 'success',
@@ -54,7 +61,8 @@ document.querySelector('.widget-content .bottom-start').addEventListener('click'
 })
 
 // Bottom End
-document.querySelector('.widget-content .bottom-end').addEventListener('click', function() {
+var bottomEndEl = document.querySelector('.widget-content .bottom-end');
+if (bottomEndEl) bottomEndEl.addEventListener('click', function() {
     Swal.fire({
         position: 'bottom-end',
         icon: 'success',
@@ -69,7 +77,8 @@ document.querySelector('.widget-content .bottom-end').addEventListener('click', 
  *       Auto Timer
  */
 
-document.querySelector('.widget-content .timer').addEventListener('click', function() {
+var timerEl = document.querySelector('.widget-content .timer');
+if (timerEl) timerEl.addEventListener('click', function() {
     let timerInterval
     Swal.fire({
         title: 'Auto close alert!',
@@ -97,7 +106,8 @@ document.querySelector('.widget-content .timer').addEventListener('click', funct
 /**
  *     Message with custom image
  */
-document.querySelector('.widget-content .custom-image').addEventListener('click', function() {
+var customImgEl = document.querySelector('.widget-content .custom-image');
+if (customImgEl) customImgEl.addEventListener('click', function() {
     Swal.fire({
         title: 'Sweet!',
         text: 'Modal with a custom image.',
@@ -111,7 +121,8 @@ document.querySelector('.widget-content .custom-image').addEventListener('click'
 /**
  *     Warning message, with "Confirm" button
  */
-document.querySelector('.widget-content .warning.confirm').addEventListener('click', function() {
+var warningConfirmEl = document.querySelector('.widget-content .warning.confirm');
+if (warningConfirmEl) warningConfirmEl.addEventListener('click', function() {
     Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -142,7 +153,8 @@ const swalWithBootstrapButtons = Swal.mixin({
     buttonsStyling: false
 })
 
-document.querySelector('.widget-content .warning.cancel').addEventListener('click', function() {
+var warningCancelEl = document.querySelector('.widget-content .warning.cancel');
+if (warningCancelEl) warningCancelEl.addEventListener('click', function() {
     Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -174,7 +186,8 @@ document.querySelector('.widget-content .warning.cancel').addEventListener('clic
 /**
  *     RTL Support
  */
-document.querySelector('.widget-content .RTL').addEventListener('click', function() {
+var rtlEl = document.querySelector('.widget-content .RTL');
+if (rtlEl) rtlEl.addEventListener('click', function() {
     Swal.fire({
         title: 'هل تريد الاستمرار؟',
         icon: 'question',
@@ -190,7 +203,8 @@ document.querySelector('.widget-content .RTL').addEventListener('click', functio
 /**
  *     Mixin
  */
-document.querySelector('.widget-content .mixin').addEventListener('click', function() {
+var mixinEl = document.querySelector('.widget-content .mixin');
+if (mixinEl) mixinEl.addEventListener('click', function() {
     const Toast = Swal.mixin({
         toast: true,
         position: 'bottom-end',
@@ -215,7 +229,8 @@ document.querySelector('.widget-content .mixin').addEventListener('click', funct
  */
 
 // Succcess
-document.querySelector('.widget-content .icon-success').addEventListener('click', function() {
+var iconSuccessEl = document.querySelector('.widget-content .icon-success');
+if (iconSuccessEl) iconSuccessEl.addEventListener('click', function() {
     Swal.fire({
         icon: 'success',
         title: 'Icon Success',
@@ -223,7 +238,8 @@ document.querySelector('.widget-content .icon-success').addEventListener('click'
 })
 
 // Error
-document.querySelector('.widget-content .icon-error').addEventListener('click', function() {
+var iconErrorEl = document.querySelector('.widget-content .icon-error');
+if (iconErrorEl) iconErrorEl.addEventListener('click', function() {
     Swal.fire({
         icon: 'error',
         title: 'Icon Error',
@@ -231,7 +247,8 @@ document.querySelector('.widget-content .icon-error').addEventListener('click', 
 })
 
 // Warning
-document.querySelector('.widget-content .icon-warning').addEventListener('click', function() {
+var iconWarningEl = document.querySelector('.widget-content .icon-warning');
+if (iconWarningEl) iconWarningEl.addEventListener('click', function() {
     Swal.fire({
         icon: 'warning',
         title: 'Icon Warning',
@@ -239,7 +256,8 @@ document.querySelector('.widget-content .icon-warning').addEventListener('click'
 })
 
 // Info
-document.querySelector('.widget-content .icon-info').addEventListener('click', function() {
+var iconInfoEl = document.querySelector('.widget-content .icon-info');
+if (iconInfoEl) iconInfoEl.addEventListener('click', function() {
     Swal.fire({
         icon: 'info',
         title: 'Icon Info',
@@ -247,7 +265,8 @@ document.querySelector('.widget-content .icon-info').addEventListener('click', f
 })
 
 // Question
-document.querySelector('.widget-content .icon-question').addEventListener('click', function() {
+var iconQuestionEl = document.querySelector('.widget-content .icon-question');
+if (iconQuestionEl) iconQuestionEl.addEventListener('click', function() {
     Swal.fire({
         icon: 'question',
         title: 'Icon Question',

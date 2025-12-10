@@ -13,14 +13,17 @@ body:before {
 }
 
 .auth-container {
+  background-image: url('../../../img/vectorizado4.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+
 .auth-container .container {
   max-width: 1440px;
 }
+
 .auth-container .card {
   padding: 2rem;
   margin: 1rem;
@@ -28,6 +31,7 @@ body:before {
   box-shadow: 2px 2px 2px 0 rgb(235, 233, 233);
   border-radius: 8px;
 }
+
 .auth-container .card .card-body {
   padding-top: 0;
   padding-bottom: 0;
