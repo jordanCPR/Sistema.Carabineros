@@ -757,7 +757,14 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                            <button class="btn btn-danger" data-bs-dismiss="modal"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-x-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg></button>
                         </div>
                     </div>
                 </div>
@@ -806,14 +813,14 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-warning" data-bs-dismiss="modal"><svg
+                            <button class="btn btn-danger" data-bs-dismiss="modal"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-x-circle">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <line x1="15" y1="9" x2="9" y2="15"></line>
                                     <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg> Cerrar</button>
+                                </svg></button>
                             <button type="button" class="btn btn-carabineros"><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -821,7 +828,7 @@
                                     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                     <polyline points="16 17 21 12 16 7"></polyline>
                                     <line x1="21" y1="12" x2="9" y2="12"></line>
-                                </svg> Cambiar</button>
+                                </svg></button>
                         </div>
 
 
@@ -989,14 +996,14 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-warning" data-bs-dismiss="modal"><svg
+                            <button class="btn btn-danger" data-bs-dismiss="modal"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-x-circle">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <line x1="15" y1="9" x2="9" y2="15"></line>
                                     <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg> Cerrar</button>
+                                </svg></button>
                         </div>
 
 
@@ -1052,8 +1059,8 @@
                     text: "Debe seleccionar una opción para continuar",
                     icon: 'info',
                     showCancelButton: true,
-                    confirmButtonText: 'Aceptar!',
-                    cancelButtonText: 'Cerrar!',
+                    confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"> <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path> <polyline points="16 17 21 12 16 7"></polyline> <line x1="21" y1="12" x2="9" y2="12"></line> </svg>',
+                    cancelButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
                     reverseButtons: true
                 }).then((result) => {
                     if (result.isConfirmed) {
