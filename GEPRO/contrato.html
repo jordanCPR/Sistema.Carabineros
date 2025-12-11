@@ -599,7 +599,7 @@
                                 </div>
                                 <div class="widget-content widget-content-area">
                                     <div class="row">
-                                        <div class="col-xl-3 col-md-6 col-sm-12">
+                                        <div class="col-xl-4 col-md-6 col-sm-12">
                                             <div class="form-group">
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text">
@@ -652,10 +652,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-3 col-md-6 col-sm-12">
+                                        <div class="col-xl-2 col-md-6 col-sm-12">
                                             <div class="mb-3">
                                                 <div class="btn-group" role="group" aria-label="Basic example">
-                                                    <button type="button" class="btn btn-carabineros"><svg
+                                                    <button type="button" class="btn btn-carabineros" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ejecutar acción acorde a tipo de consulta."><svg
                                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                             stroke-width="2" stroke-linecap="round"
@@ -704,7 +704,8 @@
                                                             <div class="btn-group">
                                                                 <button class="btn btn-carabineros-light"
                                                                     data-bs-toggle="modal"
-                                                                    data-bs-target="#modalDiscapacitado"><svg
+                                                                    data-bs-target="#modalDiscapacitado"
+                                                                    ><svg
                                                                         xmlns="http://www.w3.org/2000/svg" width="24"
                                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                                         stroke="currentColor" stroke-width="2"
@@ -715,6 +716,7 @@
                                                                         </path>
                                                                         <circle cx="12" cy="7" r="4"></circle>
                                                                     </svg> </button>
+
                                                                 <button class="btn btn-carabineros"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#modalAhorroVoluntario"><svg
@@ -723,6 +725,7 @@
                                                                         <path
                                                                             d="M136 40a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zM117.9 197.6l12.6 63c-38.6 12.4-66.5 48.7-66.5 91.4 0 53 43 96 96 96 35.6 0 66.7-19.4 83.3-48.2 2.3 .1 4.6 .2 7 .2l4.1 0c1 0 2.1 0 3.1 0l55.2 0c-20.4 64.9-81 112-152.7 112-88.4 0-160-71.6-160-160 0-73.8 50-135.9 117.9-154.4zm148.6-28.1l23.7 118.5 60.5 0c33.3 0 63.2 20.7 74.9 51.9l25.5 68 18.7-6.2c16.8-5.6 34.9 3.5 40.5 20.2s-3.5 34.9-20.2 40.5l-48 16c-16.3 5.4-34-3-40.1-19.1l-36.3-96.9c-2.3-6.2-8.3-10.4-15-10.4l-86.1 0c-.4 0-.8 0-1.3 0l-13.1 0c-30.5 0-56.8-21.5-62.8-51.4L165.3 189.7c-6.4-31.9 18-61.7 50.6-61.7 24.6 0 45.8 17.4 50.6 41.5z" />
                                                                     </svg></button>
+
                                                                 <button class="btn btn-carabineros"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#modalDocumentosAdjuntos"><svg
@@ -1338,7 +1341,7 @@
                                                             <polyline points="12 8 8 12 12 16"></polyline>
                                                             <line x1="16" y1="12" x2="8" y2="12"></line>
                                                         </svg> </button>
-                                                    <button class="btn btn-info me-3"><svg
+                                                    <button class="btn btn-danger me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Limpiar Formulario."><svg
                                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                             stroke-width="2" stroke-linecap="round"
@@ -1348,7 +1351,7 @@
                                                                 d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
                                                             </path>
                                                         </svg></button>
-                                                    <button class="btn btn-danger btn-me-3">
+                                                    <button class="btn btn-info btn-me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Guardar.">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                             stroke-width="2" stroke-linecap="round"
@@ -1368,19 +1371,19 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- FOOTER -->
                     <div class="row layout-top-spacing container-carabinero">
                         <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
                             <div class="card btn-carabinero-big">
                                 <div class="container p-2">
                                     <div class="row align-items-center">
                                         <div class="col-md-3">
-                                            <img src="src/assets/img/logo.png" class="up-object rounded-circle"
+                                            <img src="src/assets/img/logo.png" class="up-object"
                                                 alt="Carabineros de Chile" width="70" height="70">
                                         </div>
                                         <div class="col-md-6 text-center">
                                             <p class="">© 2026 Copyright: Carabineros de Chile <span
-                                                    class="fi fi-cl flags-svg border-circle" width="50"
+                                                    class="fi fi-cl flags-svg rounded-circle" width="50"
                                                     height="50"></span></p>
                                         </div>
                                         <div class="col-md-3 text-md-end">
@@ -1392,13 +1395,13 @@
                             </div>
                         </div>
                     </div>
-
+                     <!-- FOOTER -->
                 </div>
             </div>
 
 
 
-            <!-- MODALES -->
+            <!-- MODALES CARGA MASIVA -->
             <div class="modal fade" id="modalCargaMasivaContratos" tabindex="-1" role="dialog"
                 aria-labelledby="modalCargaMasivaContratosTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1440,20 +1443,21 @@
                                     <line x1="15" y1="9" x2="9" y2="15"></line>
                                     <line x1="9" y1="9" x2="15" y2="15"></line>
                                 </svg> </button>
-                            <button type="button" class="btn btn-carabineros"><svg xmlns="http://www.w3.org/2000/svg"
+                            <button type="button" class="btn btn-carabineros" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Cargar Nómina"><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="feather feather-database">
                                     <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
                                     <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
                                     <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg> Cargar Nómina</button>
+                                </svg></button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- MODALES CARGA MASIVA -->
 
-
+            <!-- MODALES AUTORIZA CONTRATO -->
             <div class="modal fade" id="modalIngresoAutorizaContrato" tabindex="-1" role="dialog"
                 aria-labelledby="modalIngresoAutorizaContratoTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1466,7 +1470,7 @@
                                     <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
                                     <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
                                     <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg> Consulta de Datos</h5>
+                                </svg>Autorizo ingreso contrato | Consulta de Datos</h5>
                         </div>
                         <div class="modal-body">
                             <form>
@@ -1521,27 +1525,19 @@
                                     <line x1="15" y1="9" x2="9" y2="15"></line>
                                     <line x1="9" y1="9" x2="15" y2="15"></line>
                                 </svg> </button>
-                            <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-database">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg></button>
-                            <button type="button" class="btn btn-carabineros"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-database">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg></button>
+                            <button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Rechazar.">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                            </button>
+                            <button type="button" class="btn btn-carabineros" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Validar.">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- MODALES AUTORIZA CONTRATO -->
 
+            <!-- MODALES FECHA SISTEMA -->
             <div class="modal fade" id="modalFechaSistema" tabindex="-1" role="dialog"
                 aria-labelledby="modalFechaSistemaTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1605,8 +1601,9 @@
                     </div>
                 </div>
             </div>
+            <!-- MODALES FECHA SISTEMA -->
 
-
+            <!-- MODALES CAMBIO CORREO -->
             <div class="modal fade" id="modalCambioCorreo" tabindex="-1" aria-labelledby="modalCambioCorreoTitle"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- MODAL XL -->
@@ -1686,7 +1683,9 @@
                     </div>
                 </div>
             </div>
+            <!-- MODALES CAMBIO CORREO -->
 
+            <!-- MODALES LISTADO FUNCIONARIO -->
             <div class="modal fade" id="modalListadoFuncionario" tabindex="-1"
                 aria-labelledby="modalListadoFuncionarioTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- MODAL XL -->
@@ -1750,7 +1749,9 @@
                     </div>
                 </div>
             </div>
+            <!-- MODALES LISTADO FUNCIONARIO -->
 
+            <!-- MODALES DISCAPACITADO -->
             <div class="modal fade" id="modalDiscapacitado" tabindex="-1" aria-labelledby="modalDiscapacitadoTitle"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- MODAL XL -->
@@ -1849,7 +1850,9 @@
                     </div>
                 </div>
             </div>
+            <!-- MODALES DISCAPACITADO -->
 
+            <!-- MODALES AHORRO VOLUNTARIO -->
             <div class="modal fade" id="modalAhorroVoluntario" tabindex="-1"
                 aria-labelledby="modalAhorroVoluntarioTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- MODAL XL -->
@@ -1954,8 +1957,9 @@
                     </div>
                 </div>
             </div>
+            <!-- MODALES AHORRO VOLUNTARIO -->
 
-
+            <!-- MODALES DOCUMENTOS ADJUNTOS -->
             <div class="modal fade" id="modalDocumentosAdjuntos" tabindex="-1"
                 aria-labelledby="modalDocumentosAdjuntosTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- MODAL XL -->
@@ -2016,6 +2020,7 @@
                     </div>
                 </div>
             </div>
+            <!-- MODALES DOCUMENTOS ADJUNTOS -->
 
             <!-- PERFIL -->
             <div class="modal fade" id="modalPerfil" tabindex="-1" role="dialog" aria-labelledby="modalPerfilTitle"
@@ -2326,6 +2331,15 @@
             }); //si se pulsa en el botón limpiar el intervalo
 
         });
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+            var tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        })
     </script>
 </body>
 

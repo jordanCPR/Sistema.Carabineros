@@ -114,7 +114,8 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group mb-4">
-                                            <a class="btn btn-carabineros w-100" href="./welcome.html"><svg
+                                            <a class="btn btn-carabineros w-100" href="./welcome.html"
+                                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ingresar al sistema con su cuenta authentificatic."><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -129,7 +130,8 @@
                                     <div class="">
                                         <div class="seperator">
                                             <hr>
-                                            <div class="seperator-text"> <span>Departamento P.7 <span class="fi fi-cl flags-svg"></span></span></div>
+                                            <div class="seperator-text"> <span>Departamento P.7 <span
+                                                        class="fi fi-cl flags-svg"></span></span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -163,6 +165,15 @@
     <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        })
+    </script>
 
     <script>
         $("#text").ready(function () {
