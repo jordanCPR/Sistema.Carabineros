@@ -103,6 +103,10 @@ code {
 }
 
 .main-container {
+  background-image: url('../../../../src/assets/img/vectorizadoSantiagoLight.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
