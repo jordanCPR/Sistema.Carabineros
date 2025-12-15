@@ -27,6 +27,11 @@
         integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="src/plugins/src/sweetalerts2/sweetalerts2.css">
+
+    <link href="src/plugins/css/light/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+
+    <link href="src/plugins/css/dark/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="form">
@@ -114,8 +119,9 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group mb-4">
-                                            <a class="btn btn-carabineros w-100" href="./welcome.html"
-                                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ingresar al sistema con su cuenta authentificatic."><svg
+                                            <a class="btn btn-carabineros w-100" href="#" onclick="aprobacion()"
+                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-title="Ingresar al sistema con su cuenta authentificatic."><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -165,6 +171,8 @@
     <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="src/plugins/src/sweetalerts2/sweetalerts2.min.js"></script>
+    <script src="src/plugins/src/sweetalerts2/custom-sweetalert.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -221,6 +229,32 @@
                 }, false);
             });
         }, false);
+    </script>
+
+    <script>
+        function aprobacion() {
+            Swal.fire({
+                title: '<div class="mb-2">Advertencia</div>',
+                text: "Toda la información velada en el sistema es exclusivamente de carabineros y no debe ser divulgada o puede conllevar a sanciones judiciales.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>',
+                cancelButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "./welcome.html";
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire(
+                        'Cancelado',
+                        'Queda sin efecto.'
+                    )
+                }
+            })
+        }        
     </script>
 </body>
 

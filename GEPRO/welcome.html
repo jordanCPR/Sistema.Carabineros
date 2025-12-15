@@ -122,7 +122,7 @@
                             </a>
                         </div>
                         <div class="dropdown-item">
-                            <a href="index.html">
+                            <a href="#" onclick="cerrarSesion()">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-log-out">
@@ -579,25 +579,28 @@
 
                         <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
                             <div class="card btn-carabinero-big">
-                                <div class="card-body pt-3">
-                                    <p class="mb-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
-                                            <rect x="3" y="3" width="7" height="7"></rect>
-                                            <rect x="14" y="3" width="7" height="7"></rect>
-                                            <rect x="14" y="14" width="7" height="7"></rect>
-                                            <rect x="3" y="14" width="7" height="7"></rect>
-                                        </svg> Beneficios (SIGEAPER) <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-arrow-right-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polyline points="12 16 16 12 12 8"></polyline>
-                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                        </svg>
-                                    </p>
-                                </div>
+                                <a href="./beneficios.html">
+                                    <div class="card-body pt-3">
+                                        <p class="mb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-grid">
+                                                <rect x="3" y="3" width="7" height="7"></rect>
+                                                <rect x="14" y="3" width="7" height="7"></rect>
+                                                <rect x="14" y="14" width="7" height="7"></rect>
+                                                <rect x="3" y="14" width="7" height="7"></rect>
+                                            </svg> Beneficios (SIGEAPER) <svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="feather feather-arrow-right-circle">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 16 16 12 12 8"></polyline>
+                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
@@ -763,10 +766,11 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Cerrar"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-x-circle">
+                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Cerrar"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-x-circle">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <line x1="15" y1="9" x2="9" y2="15"></line>
                                     <line x1="9" y1="9" x2="15" y2="15"></line>
@@ -921,10 +925,11 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Cerrar"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-x-circle">
+                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Cerrar"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-x-circle">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <line x1="15" y1="9" x2="9" y2="15"></line>
                                     <line x1="9" y1="9" x2="15" y2="15"></line>
@@ -994,6 +999,31 @@
                         swalWithBootstrapButtons.fire(
                             'Cancelado',
                             'Queda sin efecto.'
+                        )
+                    }
+                })
+            }
+
+            function cerrarSesion() {
+                Swal.fire({
+                    title: '¿Estas Seguro?',
+                    text: "Si procedes, para volver deberas ingresar nuevamente tu credencial.",
+                    icon: 'danger',
+                    showCancelButton: true,
+                    confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"> <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path> <polyline points="16 17 21 12 16 7"></polyline> <line x1="21" y1="12" x2="9" y2="12"></line> </svg>',
+                    cancelButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = "./index.html";
+                    } else if (
+                        /* Read more about handling dismissals below */
+                        result.dismiss === Swal.DismissReason.cancel
+                    ) {
+                        swalWithBootstrapButtons.fire(
+                            'Cancelled',
+                            'Your imaginary file is safe :)',
+                            'error'
                         )
                     }
                 })

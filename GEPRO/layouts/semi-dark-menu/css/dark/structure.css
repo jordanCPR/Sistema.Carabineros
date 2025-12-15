@@ -99,6 +99,11 @@ body.dark .page-title span {
   font-weight: normal;
 }
 body.dark .main-container {
+  background-image: url('../../../../src/assets/img/vectorizadoSantiagoDark.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
