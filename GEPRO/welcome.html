@@ -671,7 +671,7 @@
                             </div>
                         </div>
                     </div>
-                     <!-- FOOTER -->
+                    <!-- FOOTER -->
                 </div>
 
             </div>
@@ -763,7 +763,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-danger" data-bs-dismiss="modal"><svg
+                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Cerrar"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-x-circle">
@@ -821,21 +821,22 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-danger" data-bs-dismiss="modal"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-x-circle">
+                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Cerrar"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-x-circle">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <line x1="15" y1="9" x2="9" y2="15"></line>
                                     <line x1="9" y1="9" x2="15" y2="15"></line>
                                 </svg></button>
-                            <button type="button" class="btn btn-carabineros"><svg xmlns="http://www.w3.org/2000/svg"
+                            <button type="button" class="btn btn-carabineros" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Ejecutar"><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-log-out">
-                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                                    <polyline points="16 17 21 12 16 7"></polyline>
-                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                    class="feather feather-play-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
                                 </svg></button>
                         </div>
                     </div>
@@ -873,62 +874,43 @@
                                                 <div class="">
                                                     <ul class="contacts-block list-unstyled">
                                                         <li class="contacts-block__item">
-                                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-check-square">
+                                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                                <path
+                                                                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11">
+                                                                </path>
+                                                            </svg>
                                                             Grado: C.P.R. GDO. 12
                                                         </li>
                                                         <li class="contacts-block__item">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-check-square">
+                                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                                <path
+                                                                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11">
+                                                                </path>
+                                                            </svg>
                                                             Nombres: Martin Salazar
                                                         </li>
                                                         <li class="contacts-block__item">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-check-square">
+                                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                                <path
+                                                                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11">
+                                                                </path>
+                                                            </svg>
                                                             Run: 194191618
-                                                        </li>
-                                                    </ul>
-
-                                                    <ul class="list-inline mt-4">
-                                                        <li class="list-inline-item mb-0">
-                                                            <a class="btn btn-info btn-icon btn-rounded"
-                                                                href="javascript:void(0);">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                                    class="feather feather-twitter">
-                                                                    <path
-                                                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                                                    </path>
-                                                                </svg>
-                                                            </a>
-                                                        </li>
-                                                        <li class="list-inline-item mb-0">
-                                                            <a class="btn btn-danger btn-icon btn-rounded"
-                                                                href="javascript:void(0);">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                                    class="feather feather-dribbble">
-                                                                    <circle cx="12" cy="12" r="10"></circle>
-                                                                    <path
-                                                                        d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32">
-                                                                    </path>
-                                                                </svg>
-                                                            </a>
-                                                        </li>
-                                                        <li class="list-inline-item mb-0">
-                                                            <a class="btn btn-dark btn-icon btn-rounded"
-                                                                href="javascript:void(0);">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                                    class="feather feather-github">
-                                                                    <path
-                                                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                                    </path>
-                                                                </svg>
-                                                            </a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -939,7 +921,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-danger" data-bs-dismiss="modal"><svg
+                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Cerrar"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-x-circle">
@@ -999,7 +981,7 @@
                     text: "Debe seleccionar una opción para continuar",
                     icon: 'info',
                     showCancelButton: true,
-                    confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"> <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path> <polyline points="16 17 21 12 16 7"></polyline> <line x1="21" y1="12" x2="9" y2="12"></line> </svg>',
+                    confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>',
                     cancelButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
                     reverseButtons: true
                 }).then((result) => {
@@ -1010,9 +992,8 @@
                         result.dismiss === Swal.DismissReason.cancel
                     ) {
                         swalWithBootstrapButtons.fire(
-                            'Cancelled',
-                            'Your imaginary file is safe :)',
-                            'error'
+                            'Cancelado',
+                            'Queda sin efecto.'
                         )
                     }
                 })
@@ -1048,6 +1029,15 @@
                 }); //si se pulsa en el botón limpiar el intervalo
 
             });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                var tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            })
         </script>
 </body>
 
