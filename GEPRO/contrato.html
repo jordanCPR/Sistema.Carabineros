@@ -175,7 +175,7 @@
                 </div>
                 <div class="shadow-bottom"></div>
                 <ul class="list-unstyled menu-categories" id="accordionExample">
-                    <li class="menu active">
+                    <li class="menu">
                         <a href="#dashboard" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -210,7 +210,7 @@
                             </svg><span>Modulo SIGEAPER</span></div>
                     </li>
 
-                    <li class="menu">
+                    <li class="menu active">
                         <a href="#components" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -289,7 +289,22 @@
                             </li>
                         </ul>-->
                     </li>
-
+                    <li class="menu">
+                        <a href="./miscontrato.html" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file-text">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>Mi Contrato</span>
+                            </div>
+                        </a>
+                    </li>
                     <li class="menu">
                         <a href="#" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
@@ -502,7 +517,7 @@
                     <!-- /BREADCRUMB -->
 
                     <div class="row layout-top-spacing container-carabinero">
-                        <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
                             <div class="card btn-carabinero-big" data-bs-toggle="modal"
                                 data-bs-target="#modalCargaMasivaContratos">
                                 <div class="card-body pt-3">
@@ -527,7 +542,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
                             <div class="card btn-carabinero-big" data-bs-toggle="modal"
                                 data-bs-target="#modalIngresoAutorizaContrato">
                                 <div class="card-body pt-3">
@@ -541,31 +556,6 @@
                                         </svg> Autoriza Ingreso de Contratos <svg xmlns="http://www.w3.org/2000/svg"
                                             width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-arrow-right-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polyline points="12 16 16 12 12 8"></polyline>
-                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                        </svg>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
-                            <div class="card btn-carabinero-big" data-bs-toggle="modal"
-                                data-bs-target="#modalCambioCorreo">
-                                <div class="card-body pt-3">
-                                    <p class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                            <path
-                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                            </path>
-                                            <polyline points="22,6 12,13 2,6"></polyline>
-                                        </svg> Modifica Correo Funcionario
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
                                             class="feather feather-arrow-right-circle">
                                             <circle cx="12" cy="12" r="10"></circle>
                                             <polyline points="12 16 16 12 12 8"></polyline>
@@ -1677,91 +1667,6 @@
             </div>
             <!-- MODALES FECHA SISTEMA -->
 
-            <!-- MODALES CAMBIO CORREO -->
-            <div class="modal fade" id="modalCambioCorreo" tabindex="-1" aria-labelledby="modalCambioCorreoTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- MODAL XL -->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalCambioCorreoTitle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-mail">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                    </path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                                Modifica correo electrónico Funcionario
-                            </h5>
-                        </div>
-
-                        <div class="modal-body">
-                            <div class="table-responsive"> <!-- AQUI SE HACE RESPONSIVE -->
-                                <table class="datatable-universal table table-striped table-bordered nowrap"
-                                    style="width:100%">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Rut</th>
-                                            <th>DV</th>
-                                            <th>Nombre</th>
-                                            <th>Segundo Nombre</th>
-                                            <th>Apellido</th>
-                                            <th>Segundo Apellido</th>
-                                            <th class="text-center">Acción</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-center">1</td>
-                                            <td>19.419.161</td>
-                                            <td>8</td>
-                                            <td>Jordan</td>
-                                            <td>Ariel</td>
-                                            <td>Aguilera</td>
-                                            <td>Labra</td>
-                                            <td class="text-center">
-                                                <button class="btn btn-dark" data-bs-toggle="tooltip"
-                                                    data-bs-placement="top" data-bs-title="Modificar"><svg
-                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-edit">
-                                                        <path
-                                                            d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7">
-                                                        </path>
-                                                        <path
-                                                            d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z">
-                                                        </path>
-                                                    </svg>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
-                                data-bs-placement="top" data-bs-title="Cerrar">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-x-circle">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="15" y1="9" x2="9" y2="15"></line>
-                                    <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg>
-
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- MODALES CAMBIO CORREO -->
-
             <!-- MODALES LISTADO CONTRATOS -->
             <div class="modal fade" id="modalListadoFuncionario" tabindex="-1"
                 aria-labelledby="modalListadoFuncionarioTitle" aria-hidden="true">
@@ -1838,6 +1743,7 @@
                                             <th>Segundo Nombre</th>
                                             <th>Apellido</th>
                                             <th>Segundo Apellido</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -1849,6 +1755,22 @@
                                             <td>Andres</td>
                                             <td>Salas</td>
                                             <td>XI</td>
+                                            <td class="text-center">
+                                                <button class="btn btn-dark" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" data-bs-title="Modificar Correo"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-edit">
+                                                        <path
+                                                            d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7">
+                                                        </path>
+                                                        <path
+                                                            d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1936,7 +1858,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <div class="table-responsive"> <!-- AQUI SE HACE RESPONSIVE -->
+                            <div class="table-responsive">
                                 <h5>Historial</h5>
                                 <table id="todos-col-search"
                                     class="datatable-universal table table-striped table-bordered nowrap"
