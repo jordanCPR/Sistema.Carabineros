@@ -28,8 +28,8 @@
     <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/stepper/custom-bsStepper.css">
     <!--  END CUSTOM STYLE FILE  -->
 
-    <link rel="stylesheet" type="text/css" href="src/assets/css/light/forms/switches.css">
-    <link rel="stylesheet" type="text/css" href="src/assets/css/dark/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/forms/switches.css">
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
     <link href="src/plugins/src/apex/apexcharts.css" rel="stylesheet" type="text/css">
@@ -46,16 +46,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
         integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../src/plugins/src/table/datatable/datatables.css">
+    <!--<link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/dt-global_style.css">-->
 
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/custom_dt_miscellaneous.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/custom_dt_miscellaneous.css">
     <link rel="stylesheet" href="src/plugins/src/sweetalerts2/sweetalerts2.css">
-
     <link href="src/plugins/css/light/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
-
     <link href="src/plugins/css/dark/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
-
     <link href="../src/assets/css/light/components/list-group.css" rel="stylesheet" type="text/css">
     <link href="../src/assets/css/light/users/user-profile.css" rel="stylesheet" type="text/css" />
-
     <link href="../src/assets/css/dark/components/list-group.css" rel="stylesheet" type="text/css">
     <link href="../src/assets/css/dark/users/user-profile.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
@@ -86,9 +87,8 @@
             </a>
 
             <ul class="navbar-item flex-row ms-lg-auto ms-0">
-                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">● Sistema activo | Último
+                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">● Último
                     acceso: 08:32 | Usuario: Sgto. 2° Martin Salazar</li>
-
                 <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -160,7 +160,7 @@
                             </a>
                         </div>
                         <div class="nav-item theme-text">
-                            <a href="./index.html" class="nav-link" id="text"></a>
+                            <a href="./index.html" class="nav-link" id="text"> </a>
                         </div>
                     </div>
                     <div class="nav-item sidebar-toggle">
@@ -176,7 +176,7 @@
                 </div>
                 <div class="shadow-bottom"></div>
                 <ul class="list-unstyled menu-categories" id="accordionExample">
-                    <li class="menu active">
+                    <li class="menu ">
                         <a href="#dashboard" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -197,7 +197,7 @@
                         </a>
                         <ul class="collapse submenu list-unstyled show" id="dashboard"
                             data-bs-parent="#accordionExample">
-                            <li class="active">
+                            <li class="">
                                 <a href="./welcome.html"> Inicio </a>
                             </li>
                         </ul>
@@ -234,7 +234,7 @@
                             </div>
                         </a>
                         <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
-                            <li>
+                            <li class="">
                                 <a href="#" onclick="TipoCuenta()"> Contratos </a>
                             </li>
                         </ul>
@@ -290,6 +290,7 @@
                             </li>
                         </ul>-->
                     </li>
+
                     <li class="menu">
                         <a href="./miscontrato.html" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
@@ -306,7 +307,8 @@
                             </div>
                         </a>
                     </li>
-                    <li class="menu">
+
+                    <li class="menu active">
                         <a href="./mis-asignaciones.html" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -322,6 +324,8 @@
                             </div>
                         </a>
                     </li>
+
+
                     <li class="menu">
                         <a href="#" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
@@ -412,9 +416,6 @@
                         </ul>
                     </li>
 
-
-
-
                     <li class="menu menu-heading">
                         <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -501,13 +502,12 @@
         <div id="content" class="main-content">
             <div class="container min-vh-100">
                 <div class="container">
-
                     <!-- BREADCRUMB -->
                     <div class="page-meta">
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    <a href="#">
+                                    <a href="./welcome.html">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
@@ -516,170 +516,115 @@
                                         </svg> Inicio
                                     </a>
                                 </li>
+
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-file-text">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                        </path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg> Mis Asignaciones
+                                </li>
                             </ol>
                         </nav>
                     </div>
+                    <!-- /BREADCRUMB -->
 
                     <div class="row layout-top-spacing container-carabinero">
-                        <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
-                            <div class="card btn-carabinero-big">
-                                <a href="#">
-                                    <div class="card-body pt-3">
-                                        <div class="row">
-                                            <div class="col-xl-3 col-lg-12 col-md-12">
-                                                <img src="src/assets/img/logo-gestion.png" width="200" height="200">
-                                            </div>
-                                            <div class="col-xl-9 col-lg-12 col-md-12">
-                                                <p class="mb-3">El propósito de la APP es modernizar y centralizar la
-                                                    administración de la
-                                                    información de personal y contratación dentro de la institución.
-                                                </p>
-                                                <p class="mb-1">GEPRO surge como la nueva plataforma integradora,
-                                                    destinada a reemplazar progresivamente los sistemas SIGEAPER,
-                                                    SISPER, RIPER y SIIPER, unificando los procesos de
-                                                    gestión de personal, remuneraciones y beneficios en un entorno
-                                                    único, seguro y eficiente.</p>
-                                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
-                                                    data-bs-target="#tabsModal"><svg xmlns="http://www.w3.org/2000/svg"
-                                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" class="feather feather-help-circle">
-                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                                                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                                                    </svg></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
-                            <div class="card btn-carabinero-big">
-                                <a href="#" onclick="TipoCuenta()">
-                                    <div class="card-body pt-3">
-                                        <p class="mb-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-grid">
-                                                <rect x="3" y="3" width="7" height="7"></rect>
-                                                <rect x="14" y="3" width="7" height="7"></rect>
-                                                <rect x="14" y="14" width="7" height="7"></rect>
-                                                <rect x="3" y="14" width="7" height="7"></rect>
-                                            </svg>
-                                            Contrataciones (SIGEAPER)
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-arrow-right-circle">
-                                                <circle cx="12" cy="12" r="10"></circle>
-                                                <polyline points="12 16 16 12 12 8"></polyline>
-                                                <line x1="8" y1="12" x2="16" y2="12"></line>
-                                            </svg>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
-                            <div class="card btn-carabinero-big">
-                                <a href="./funcionario.html">
-                                    <div class="card-body pt-3">
-                                        <p class="mb-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-grid">
-                                                <rect x="3" y="3" width="7" height="7"></rect>
-                                                <rect x="14" y="3" width="7" height="7"></rect>
-                                                <rect x="14" y="14" width="7" height="7"></rect>
-                                                <rect x="3" y="14" width="7" height="7"></rect>
-                                            </svg> Anotaciones (SIIPER) <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" class="feather feather-arrow-right-circle">
-                                                <circle cx="12" cy="12" r="10"></circle>
-                                                <polyline points="12 16 16 12 12 8"></polyline>
-                                                <line x1="8" y1="12" x2="16" y2="12"></line>
-                                            </svg>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
-                            <div class="card btn-carabinero-big">
-                                <a href="./beneficios.html">
-                                    <div class="card-body pt-3">
-                                        <p class="mb-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-grid">
-                                                <rect x="3" y="3" width="7" height="7"></rect>
-                                                <rect x="14" y="3" width="7" height="7"></rect>
-                                                <rect x="14" y="14" width="7" height="7"></rect>
-                                                <rect x="3" y="14" width="7" height="7"></rect>
-                                            </svg> Beneficios (SIGEAPER) <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" class="feather feather-arrow-right-circle">
-                                                <circle cx="12" cy="12" r="10"></circle>
-                                                <polyline points="12 16 16 12 12 8"></polyline>
-                                                <line x1="8" y1="12" x2="16" y2="12"></line>
-                                            </svg>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-6 col-lg-6 col-md-12 mb-4">
-                            <div class="card btn-carabinero-big">
+                        <div class="col-xl-3 col-lg-6 col-md-6 mb-2">
+                            <div class="card btn-carabinero-big text-center" data-bs-toggle="modal"
+                                data-bs-target="#modalSolicitarAsignacion">
                                 <div class="card-body pt-3">
-                                    <p class="mb-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
-                                            <rect x="3" y="3" width="7" height="7"></rect>
-                                            <rect x="14" y="3" width="7" height="7"></rect>
-                                            <rect x="14" y="14" width="7" height="7"></rect>
-                                            <rect x="3" y="14" width="7" height="7"></rect>
-                                        </svg> Curricular (SIIPER) <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-arrow-right-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polyline points="12 16 16 12 12 8"></polyline>
-                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                        </svg>
-                                    </p>
+                                    <a href="#">
+                                        <p class="mb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-file-plus">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                </path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="12" y1="18" x2="12" y2="12"></line>
+                                                <line x1="9" y1="15" x2="15" y2="15"></line>
+                                            </svg>
+                                        </p>
+                                        Solicitar Asignación
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-xl-6 col-lg-6 col-md-12 mb-4">
-                            <div class="card btn-carabinero-big">
-                                <div class="card-body pt-3">
-                                    <p class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
-                                            <rect x="3" y="3" width="7" height="7"></rect>
-                                            <rect x="14" y="3" width="7" height="7"></rect>
-                                            <rect x="14" y="14" width="7" height="7"></rect>
-                                            <rect x="3" y="14" width="7" height="7"></rect>
-                                        </svg> Sanciones (SIIPER) <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-arrow-right-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polyline points="12 16 16 12 12 8"></polyline>
-                                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                                        </svg></p>
+                    <div class="row layout-top-spacing container-carabinero" id="cancel-row">
+                        <div id="wizard_Vertical_Icons" class="col-lg-12 layout-spacing">
+                            <div class="statbox widget box box-shadow">
+                                <div class="widget-header  p-3">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                            <h4><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-file-text">
+                                                    <path
+                                                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                    </path>
+                                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                                </svg> Mis Asignaciones</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content widget-content-area">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="datatable-universal table table-striped table-bordered nowrap"
+                                                    style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Nro</th>
+                                                            <th>Tipo</th>
+                                                            <th>Grado</th>
+                                                            <th>Rut</th>
+                                                            <th>Nombre</th>
+                                                            <th>Dotación</th>
+                                                            <th>Asignación</th>
+                                                            <th>Trámite</th>
+                                                            <th>VD</th>
+                                                            <th>Reconoce</th>
+                                                            <th>Estado</th>
+                                                            <th>Usuario Digita</th>
+                                                            <th>Fecha Digita</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center">2003</td>
+                                                            <td>Máquina</td>
+                                                            <td>12</td>
+                                                            <td>19.419.161-8</td>
+                                                            <td>Jordan Aguilera</td>
+                                                            <td>Informatica</td>
+                                                            <td>Máquina</td>
+                                                            <td>Online</td>
+                                                            <td>232</td>
+                                                            <td>Tte. Lagos</td>
+                                                            <td><span class="badge bg-primary">En Espera</span></td>
+                                                            <td>jaguilera</td>
+                                                            <td>03-12-2025</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -712,177 +657,7 @@
                     </div>
                     <!-- FOOTER -->
                 </div>
-
             </div>
-            <!--  END CONTENT AREA  -->
-
-            <!-- MODAL PREGUNTAS FRECUENTES -->
-            <div class="modal fade" id="tabsModal" tabindex="-1" role="dialog" aria-labelledby="tabsModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="tabsModalLabel">Preguntas Frecuentes</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="simple-pill">
-
-                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pills-home" type="button" role="tab"
-                                            aria-controls="pills-home" aria-selected="true">General</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pills-profile" type="button" role="tab"
-                                            aria-controls="pills-profile" aria-selected="false">SIGEAPER</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pills-contact" type="button" role="tab"
-                                            aria-controls="pills-contact" aria-selected="false">SIIPER</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pills-disabled" type="button" role="tab"
-                                            aria-controls="pills-disabled" aria-selected="false" disabled>Otros</button>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                        aria-labelledby="pills-home-tab" tabindex="0">
-                                        <p class="mt-3">Etiam iaculis imperdiet maximus. Curabitur at tempus massa, a
-                                            aliquet ex. Aliquam faucibus sapien ut ex vulputate interdum. Quisque in ex
-                                            sed eros malesuada vehicula. Class aptent taciti sociosqu ad litora torquent
-                                            per conubia nostra, per inceptos himenaeos. Maecenas massa felis, maximus eu
-                                            risus ut, finibus feugiat neque. In id dictum elit.</p>
-                                        <p>Aenean ut aliquet dolor. Integer accumsan odio non dignissim lobortis. Sed
-                                            rhoncus ante eros, vel ullamcorper orci molestie congue. Phasellus vel
-                                            faucibus dolor. Morbi magna eros, vulputate eu sem nec, venenatis egestas
-                                            quam. Maecenas hendrerit mollis eros, eget faucibus quam dignissim vel.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                        aria-labelledby="pills-profile-tab" tabindex="0">
-                                        <p class="mt-3">Aliquam at sem nunc. Maecenas tincidunt lacus justo, non
-                                            ultrices mauris egestas eu. Vestibulum ut ipsum ac eros rutrum blandit in
-                                            eget quam. Nullam et lobortis nunc. Nam sodales, ante sed sodales rhoncus,
-                                            diam ipsum faucibus mauris, non interdum nisl lacus vel justo.</p>
-                                        <p>Sed imperdiet mi tincidunt mauris convallis, ut ullamcorper nunc interdum.
-                                            Praesent maximus massa eu varius gravida. Nullam in malesuada enim. Morbi
-                                            commodo pellentesque velit sodales pretium. Mauris scelerisque augue vel est
-                                            pulvinar laoreet.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                        aria-labelledby="pills-contact-tab" tabindex="0">
-                                        <p class="mt-3">In diam odio, ullamcorper vitae dolor vel, lobortis rhoncus
-                                            odio. Nullam lacinia euismod ex vitae ullamcorper. Integer fringilla arcu
-                                            nunc, et tempus sapien ornare sed. Nam fringilla velit nec bibendum
-                                            consectetur. Etiam pellentesque eu nulla vel tincidunt. </p>
-                                        <p>Ut nec nunc sed risus viverra vehicula non non purus. Nunc semper sem ut ante
-                                            suscipit vulputate. Integer tempus ornare ligula, sed lacinia leo posuere
-                                            eu. </p>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
-                                        aria-labelledby="pills-disabled-tab" tabindex="0">
-                                        <p class="mt-3">Nullam feugiat, sapien a lacinia condimentum, libero nibh
-                                            fermentum lectus, eu dictum justo ex sit amet neque. Sed felis arcu,
-                                            efficitur eget diam eget, maximus dapibus enim. Sed vitae varius lorem.
-                                            Fusce non accumsan diam, quis porttitor dolor. </p>
-                                        <p>Aenean ut aliquet dolor. Integer accumsan odio non dignissim lobortis. Sed
-                                            rhoncus ante eros, vel ullamcorper orci molestie congue. Phasellus vel
-                                            faucibus dolor. Morbi magna eros, vulputate eu sem nec, venenatis egestas
-                                            quam. Maecenas hendrerit mollis eros, eget faucibus quam dignissim vel.</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
-                                data-bs-placement="top" data-bs-title="Cerrar"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-x-circle">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="15" y1="9" x2="9" y2="15"></line>
-                                    <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL PREGUNTAS FRECUENTES -->
-
-            <!-- MODAL FECHA SISTEMA -->
-            <div class="modal fade" id="modalFechaSistema" tabindex="-1" role="dialog"
-                aria-labelledby="modalFechaSistemaTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalFechaSistemaTitle"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-calendar">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg> Cambio de Fecha</h5>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <label class="form-label">Año</label>
-                                        <input type="number" class="form-control" placeholder="XXXX">
-                                    </div>
-                                    <div class="col-6">
-                                        <label class="form-label">Mes</label>
-                                        <select class="form-select">
-                                            <option>1.- Enero</option>
-                                            <option>2.- Febrero</option>
-                                            <option>3.- Marzo</option>
-                                            <option>4.- Abril</option>
-                                            <option>5.- Mayo</option>
-                                            <option>6.- Junio</option>
-                                            <option>7.- Julio</option>
-                                            <option>8.- Agosto</option>
-                                            <option>9.- Septiembre</option>
-                                            <option>10.- Octubre</option>
-                                            <option>11.- Noviembre</option>
-                                            <option>12.- Diciembre</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
-                                data-bs-placement="top" data-bs-title="Cerrar"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-x-circle">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="15" y1="9" x2="9" y2="15"></line>
-                                    <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg></button>
-                            <button type="button" class="btn btn-carabineros" data-bs-toggle="tooltip"
-                                data-bs-placement="top" data-bs-title="Ejecutar"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-play-circle">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                                </svg></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL FECHA SISTEMA -->
 
             <!-- PERFIL -->
             <div class="modal fade" id="modalPerfil" tabindex="-1" role="dialog" aria-labelledby="modalPerfilTitle"
@@ -969,142 +744,295 @@
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <line x1="15" y1="9" x2="9" y2="15"></line>
                                     <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg></button>
+                                </svg> </button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- PERFIL -->
+            <!-- MODALES FECHA SISTEMA -->
+            <div class="modal fade" id="modalFechaSistema" tabindex="-1" role="dialog"
+                aria-labelledby="modalFechaSistemaTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFechaSistemaTitle"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-calendar">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg> Cambio de Fecha</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="form-label">Año</label>
+                                        <input type="number" class="form-control" placeholder="XXXX">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">Mes</label>
+                                        <select class="form-select">
+                                            <option>1.- Enero</option>
+                                            <option>2.- Febrero</option>
+                                            <option>3.- Marzo</option>
+                                            <option>4.- Abril</option>
+                                            <option>5.- Mayo</option>
+                                            <option>6.- Junio</option>
+                                            <option>7.- Julio</option>
+                                            <option>8.- Agosto</option>
+                                            <option>9.- Septiembre</option>
+                                            <option>10.- Octubre</option>
+                                            <option>11.- Noviembre</option>
+                                            <option>12.- Diciembre</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Cerrar"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-x-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg> </button>
+                            <button type="button" class="btn btn-carabineros"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-play-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODALES FECHA SISTEMA -->
+
+            <!-- MODALES SOLICITAR ASIGNACION -->
+            <div class="modal fade" id="modalSolicitarAsignacion" tabindex="-1" role="dialog"
+                aria-labelledby="modalSolicitarAsignacionTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSolicitarAsignacionTitle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-plus"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                                 Solicitud de Asignación Beneficio</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-6 mb-3">
+                                        <label class="form-label">Tipo Asignación</label>
+                                        <select class="form-select form-select-sm">
+                                            <option selected disabled>--SELECCIONE--</option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label class="form-label">Tramite</label>
+                                        <select class="form-select form-select-sm">
+                                            <option selected disabled>--SELECCIONE--</option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label class="form-label">Fecha Reconocimiento</label>
+                                        <input type="date" class="form-control form-control-sm">
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label class="form-label">Adjuntar Documento de Solicitud</label>
+                                        <input type="file" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label class="form-label">Observación</label>
+                                        <textarea class="form-control form-control-sm"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Cerrar"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-x-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg> </button>
+                            <button type="button" class="btn btn-carabineros" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Solicitar"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-play-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODALES SOLICITAR ASIGNACION -->
+
         </div>
-        <!-- END MAIN CONTAINER -->
+        <!--  END CONTENT AREA  -->
 
-        <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-        <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-        <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
-        <script src="src/plugins/src/waves/waves.min.js"></script>
-        <script src="layouts/semi-dark-menu/app.js"></script>
-        <script src="src/plugins/src/highlight/highlight.pack.js"></script>
-        <script src="src/assets/js/scrollspyNav.js"></script>
-        <!-- END GLOBAL MANDATORY SCRIPTS -->
+    </div>
+    <!-- END MAIN CONTAINER -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-        <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-        <script src="src/plugins/src/apex/apexcharts.min.js"></script>
-        <script src="src/assets/js/dashboard/dash_1.js"></script>
-        <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
+    <script src="src/plugins/src/waves/waves.min.js"></script>
+    <script src="layouts/semi-dark-menu/app.js"></script>
+    <script src="src/plugins/src/highlight/highlight.pack.js"></script>
+    <script src="src/assets/js/scrollspyNav.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
 
-        <!-- BEGIN PAGE LEVEL SCRIPTS -->
-        <script src="src/plugins/src/stepper/bsStepper.min.js"></script>
-        <script src="src/plugins/src/stepper/custom-bsStepper.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="src/assets/js/scrollspyNav.js"></script>
-        <script src="src/plugins/src/sweetalerts2/sweetalerts2.min.js"></script>
-        <script src="src/plugins/src/sweetalerts2/custom-sweetalert.js"></script>
-        <!-- END PAGE LEVEL SCRIPTS -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const chk = document.querySelector('.form-check-input.dark-mode');
-                const themeToggle = document.querySelector('.theme-toggle');
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="src/plugins/src/apex/apexcharts.min.js"></script>
+    <script src="src/assets/js/dashboard/dash_1.js"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 
-                if (!chk || !themeToggle) return;
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="src/plugins/src/stepper/bsStepper.min.js"></script>
+    <script src="src/plugins/src/stepper/custom-bsStepper.min.js"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
 
-                chk.addEventListener('change', function () {
-                    // Dispara el mismo evento que usaría el usuario
-                    themeToggle.click();
-                });
+    <script src="src/plugins/src/table/datatable/datatables.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
+    <script src="src/plugins/src/table/datatable/custom_miscellaneous.js"></script>
+
+    <!-- DataTables Responsive JS -->
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+
+
+    <script src="src/plugins/src/sweetalerts2/sweetalerts2.min.js"></script>
+    <script src="src/plugins/src/sweetalerts2/custom-sweetalert.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const chk = document.querySelector('.form-check-input.dark-mode');
+            const themeToggle = document.querySelector('.theme-toggle');
+
+            if (!chk || !themeToggle) return;
+
+            chk.addEventListener('change', function () {
+                themeToggle.click();
             });
-        </script>
+        });
+    </script>
 
-        <script>
-            function TipoCuenta() {
-                Swal.fire({
-                    title: '<form><div class="mb-3"><label for="exampleFormControlSelect1" class="form-label">Seleccionar Unidad de Trabajo</label><select class="form-select" id="exampleFormControlSelect1"><option>COP ESTE</option><option>PREF. ARICA</option><option>REVICOM</option></select></div></form>',
-                    text: "Debe seleccionar una opción para continuar",
-                    icon: 'info',
-                    showCancelButton: true,
-                    confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>',
-                    cancelButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
-                    reverseButtons: true
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location.href = "./contrato.html";
-                    } else if (
-                        /* Read more about handling dismissals below */
-                        result.dismiss === Swal.DismissReason.cancel
-                    ) {
-                        swalWithBootstrapButtons.fire(
-                            'Cancelado',
-                            'Queda sin efecto.'
-                        )
-                    }
-                })
-            }
-
-            function cerrarSesion() {
-                Swal.fire({
-                    title: '¿Estas Seguro?',
-                    text: "Si procedes, para volver deberas ingresar nuevamente tu credencial.",
-                    icon: 'danger',
-                    showCancelButton: true,
-                    confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"> <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path> <polyline points="16 17 21 12 16 7"></polyline> <line x1="21" y1="12" x2="9" y2="12"></line> </svg>',
-                    cancelButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
-                    reverseButtons: true
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location.href = "./index.html";
-                    } else if (
-                        /* Read more about handling dismissals below */
-                        result.dismiss === Swal.DismissReason.cancel
-                    ) {
-                        swalWithBootstrapButtons.fire(
-                            'Cancelled',
-                            'Your imaginary file is safe :)',
-                            'error'
-                        )
-                    }
-                })
-            }
-        </script>
-
-        <script>
-            $("#text").ready(function () {
-
-                //Es un fragmento de texto extraido del periódico "El país"
-                var text = "GEPRO";
-
-                var writer = "";
-                writer.length = 0; //Limpiar el string
-                var maxLength = text.length;
-                var count = 0;
-                var speed = 3000 / maxLength; //La velocidad varía dependiendo de la cantidad de caracteres
-
-                var write = setInterval(function () {
-
-                    if (count > text.length) {
-                        clearInterval(write);
-                    }
-
-                    writer += text.charAt(count);
-                    document.getElementById("text").innerHTML = writer;
-                    count++;
-
-                }, speed);
-
-                $("#write").click(function () {
-                    clearInterval(write);
-                }); //si se pulsa en el botón limpiar el intervalo
-
-            });
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                var tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                    return new bootstrap.Tooltip(tooltipTriggerEl)
-                })
+    <script>
+        function TipoCuenta() {
+            Swal.fire({
+                title: '<form><div class="mb-3"><label for="exampleFormControlSelect1" class="form-label">Seleccionar Unidad de Trabajo</label><select class="form-select" id="exampleFormControlSelect1"><option>COP ESTE</option><option>PREF. ARICA</option><option>REVICOM</option></select></div></form>',
+                text: "Debe seleccionar una opción para continuar",
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"> <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path> <polyline points="16 17 21 12 16 7"></polyline> <line x1="21" y1="12" x2="9" y2="12"></line> </svg>',
+                cancelButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "./contrato.html";
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire(
+                        'Cancelled',
+                        'Your imaginary file is safe :)',
+                        'error'
+                    )
+                }
             })
-        </script>
+        }
+
+        function cerrarSesion() {
+            Swal.fire({
+                title: '¿Estas Seguro?',
+                text: "Si procedes, para volver deberas ingresar nuevamente tu credencial.",
+                icon: 'danger',
+                showCancelButton: true,
+                confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"> <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path> <polyline points="16 17 21 12 16 7"></polyline> <line x1="21" y1="12" x2="9" y2="12"></line> </svg>',
+                cancelButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "./index.html";
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire(
+                        'Cancelled',
+                        'Your imaginary file is safe :)',
+                        'error'
+                    )
+                }
+            })
+        }
+    </script>
+
+    <script>
+        $("#text").ready(function () {
+
+            //Es un fragmento de texto extraido del periódico "El país"
+            var text = "GEPRO";
+
+            var writer = "";
+            writer.length = 0; //Limpiar el string
+            var maxLength = text.length;
+            var count = 0;
+            var speed = 3000 / maxLength; //La velocidad varía dependiendo de la cantidad de caracteres
+
+            var write = setInterval(function () {
+
+                if (count > text.length) {
+                    clearInterval(write);
+                }
+
+                writer += text.charAt(count);
+                document.getElementById("text").innerHTML = writer;
+                count++;
+
+            }, speed);
+
+            $("#write").click(function () {
+                clearInterval(write);
+            }); //si se pulsa en el botón limpiar el intervalo
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        })
+    </script>
 </body>
 
 </html>
