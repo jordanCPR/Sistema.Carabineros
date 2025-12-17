@@ -552,12 +552,36 @@
                                                 <line x1="9" y1="15" x2="15" y2="15"></line>
                                             </svg>
                                         </p>
-                                        Solicitar Asignación
+                                        Solicitar Asignación / Beneficio
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-6 col-md-6 mb-2">
+                            <div class="card btn-carabinero-big text-center" data-bs-toggle="modal"
+                                data-bs-target="#modalSolicitarGratificacion">
+                                <div class="card-body pt-3">
+                                    <a href="#">
+                                        <p class="mb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-file-plus">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                </path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="12" y1="18" x2="12" y2="12"></line>
+                                                <line x1="9" y1="15" x2="15" y2="15"></line>
+                                            </svg>
+                                        </p>
+                                        Solicitar Graftificación Especial
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
 
                     <div class="row layout-top-spacing container-carabinero" id="cancel-row">
                         <div id="wizard_Vertical_Icons" class="col-lg-12 layout-spacing">
@@ -822,8 +846,16 @@
                 <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="modalSolicitarAsignacionTitle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-plus"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
-                                 Solicitud de Asignación Beneficio</h5>
+                            <h5 class="modal-title" id="modalSolicitarAsignacionTitle"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file-plus">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="12" y1="18" x2="12" y2="12"></line>
+                                    <line x1="9" y1="15" x2="15" y2="15"></line>
+                                </svg>
+                                Solicitud de Asignación Beneficio</h5>
                         </div>
                         <div class="modal-body">
                             <form>
@@ -888,6 +920,87 @@
                 </div>
             </div>
             <!-- MODALES SOLICITAR ASIGNACION -->
+
+            <!-- MODALES GRATIFICACION -->
+            <div class="modal fade" id="modalSolicitarAsignacion" tabindex="-1" role="dialog"
+                aria-labelledby="modalSolicitarAsignacionTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSolicitarAsignacionTitle"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file-plus">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="12" y1="18" x2="12" y2="12"></line>
+                                    <line x1="9" y1="15" x2="15" y2="15"></line>
+                                </svg>
+                                Solicitud de Graftificación Especial</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-6 mb-3">
+                                        <label class="form-label">Tipo Asignación</label>
+                                        <select class="form-select form-select-sm">
+                                            <option selected disabled>--SELECCIONE--</option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label class="form-label">Tramite</label>
+                                        <select class="form-select form-select-sm">
+                                            <option selected disabled>--SELECCIONE--</option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label class="form-label">Fecha Reconocimiento</label>
+                                        <input type="date" class="form-control form-control-sm">
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label class="form-label">Adjuntar Documento de Solicitud</label>
+                                        <input type="file" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label class="form-label">Observación</label>
+                                        <textarea class="form-control form-control-sm"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Cerrar"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-x-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg> </button>
+                            <button type="button" class="btn btn-carabineros" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Solicitar"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-play-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODALES GRATIFICACION -->
 
         </div>
         <!--  END CONTENT AREA  -->
