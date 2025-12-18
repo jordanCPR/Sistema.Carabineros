@@ -882,8 +882,8 @@ body:not(.dark) .navbar .dark-mode {
 }
 
 .sidebar-theme {
-  /*background: #0a1c08;*/
-  background: #000000;*
+  background: #0a1c08;
+  /*background: #191e3a;*/
 }
 
 .sidebar-closed>.sidebar-wrapper {
