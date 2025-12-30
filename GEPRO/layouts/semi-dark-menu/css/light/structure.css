@@ -879,6 +879,7 @@ body:not(.dark) .navbar .dark-mode {
   -webkit-user-drag: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-shadow: 5px 0 25px 0 rgba(14, 23, 38, 0.0588235294);
+  border-top-right-radius: 15px;
 }
 
 .sidebar-theme {

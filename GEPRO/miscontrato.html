@@ -208,7 +208,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>Modulo SIGEAPER</span></div>
+                            </svg><span style="color: #f3deaf;">Modulo SIGEAPER</span></div>
                     </li>
 
                     <li class="menu">
@@ -427,7 +427,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>Modulo SIIPER</span>
+                            </svg><span style="color: #f3deaf;">Modulo SIIPER</span>
                         </div>
                     </li>
 
@@ -461,7 +461,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>CONFIGURACIONES</span></div>
+                            </svg><span style="color: #f3deaf;">Configuraciones</span></div>
                     </li>
                     <li class="menu">
                         <a href="#users" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -802,7 +802,7 @@
                 </div>
             </div>
             <!-- MODALES FECHA SISTEMA -->
-            <div class="row layout-top-spacing">
+            <div class="row layout-top-spacing" style="border-top: 5px solid #f3deaf">
                 <footer class="site-footer text-white pt-5" style="background-color: #272427b3; padding-left: 30px;">
                     <div class="container">
                         <div class="row g-4">
@@ -969,34 +969,34 @@
     </script>
 
     <script>
-        $("#text").ready(function () {
+            $("#text").ready(function () {
 
-            //Es un fragmento de texto extraido del periódico "El país"
-            var text = "SICEGAP";
+                //Es un fragmento de texto extraido del periódico "El país"
+                var text = "SICEGAP";
 
-            var writer = "";
-            writer.length = 0; //Limpiar el string
-            var maxLength = text.length;
-            var count = 0;
-            var speed = 3000 / maxLength; //La velocidad varía dependiendo de la cantidad de caracteres
+                var writer = "";
+                writer.length = 0; //Limpiar el string
+                var maxLength = text.length;
+                var count = 0;
+                var speed = 3000 / maxLength; //La velocidad varía dependiendo de la cantidad de caracteres
 
-            var write = setInterval(function () {
+                var write = setInterval(function () {
 
-                if (count > text.length) {
+                    if (count > text.length) {
+                        clearInterval(write);
+                    }
+
+                    writer += text.charAt(count);
+                    document.getElementById("text").innerHTML = '<span style="color: #f3deaf;">' + writer + '</span>';
+                    count++;
+
+                }, speed);
+
+                $("#write").click(function () {
                     clearInterval(write);
-                }
+                }); //si se pulsa en el botón limpiar el intervalo
 
-                writer += text.charAt(count);
-                document.getElementById("text").innerHTML = writer;
-                count++;
-
-            }, speed);
-
-            $("#write").click(function () {
-                clearInterval(write);
-            }); //si se pulsa en el botón limpiar el intervalo
-
-        });
+            });
     </script>
 
     <script>

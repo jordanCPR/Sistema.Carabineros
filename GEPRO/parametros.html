@@ -221,7 +221,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>Modulo SIGEAPER</span></div>
+                            </svg><span style="color: #f3deaf;">Modulo SIGEAPER</span></div>
                     </li>
 
                     <li class="menu">
@@ -440,7 +440,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>Modulo SIIPER</span>
+                            </svg><span style="color: #f3deaf;">Modulo SIIPER</span>
                         </div>
                     </li>
 
@@ -474,7 +474,7 @@
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg><span>CONFIGURACIONES</span></div>
+                            </svg><span style="color: #f3deaf;">Configuraciones</span></div>
                     </li>
                     <li class="menu">
                         <a href="#users" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -581,7 +581,7 @@
                                                                 <rect x="14" y="14" width="7" height="7"></rect>
                                                                 <rect x="3" y="14" width="7" height="7"></rect>
                                                             </svg></div>
-                                                            Parametros para Contrato <div class="icons"><svg> ...
+                                                        Parametros para Contrato <div class="icons"><svg> ...
                                                             </svg>
                                                         </div>
                                                     </div>
@@ -1579,7 +1579,7 @@
                 <!-- PERFIL -->
 
             </div>
-            <div class="row layout-top-spacing">
+            <div class="row layout-top-spacing" style="border-top: 5px solid #f3deaf">
                 <footer class="site-footer text-white pt-5" style="background-color: #272427b3; padding-left: 30px;">
                     <div class="container">
                         <div class="row g-4">
@@ -1762,7 +1762,7 @@
                         }
 
                         writer += text.charAt(count);
-                        document.getElementById("text").innerHTML = writer;
+                        document.getElementById("text").innerHTML = '<span style="color: #f3deaf;">' + writer + '</span>';
                         count++;
 
                     }, speed);
@@ -1773,6 +1773,7 @@
 
                 });
             </script>
+
             <script>
                 $(document).ready(function () {
                     var tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
