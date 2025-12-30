@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>SICEGAP Carabineros de Chile</title>
+    <link rel="icon" type="image/x-icon" href="src/assets/img/logo.png" />
+    <link href="layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
+    <link href="layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
+    <script src="layouts/semi-dark-menu/loader.js"></script>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!--  BEGIN CUSTOM STYLE FILE  -->
+    <link rel="stylesheet" type="text/css" href="src/plugins/src/stepper/bsStepper.min.css">
+
+    <link rel="stylesheet" type="text/css" href="src/assets/css/light/scrollspyNav.css" />
+    <link rel="stylesheet" type="text/css" href="src/plugins/css/light/stepper/custom-bsStepper.css">
+
+    <link rel="stylesheet" type="text/css" href="src/assets/css/dark/scrollspyNav.css" />
+    <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/stepper/custom-bsStepper.css">
+    <!--  END CUSTOM STYLE FILE  -->
+
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/forms/switches.css">
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="src/plugins/src/apex/apexcharts.css" rel="stylesheet" type="text/css">
+    <link href="src/assets/css/light/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+    <link href="src/assets/css/dark/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+
+    <link href="src/assets/css/dark/components/list-group.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/dark/widgets/modules-widgets.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+        integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../src/plugins/src/table/datatable/datatables.css">
+    <!--<link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/dt-global_style.css">-->
+
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/custom_dt_miscellaneous.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/custom_dt_miscellaneous.css">
+    <link rel="stylesheet" href="src/plugins/src/sweetalerts2/sweetalerts2.css">
+    <link href="src/plugins/css/light/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="src/plugins/css/dark/sweetalerts2/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="../src/assets/css/light/components/list-group.css" rel="stylesheet" type="text/css">
+    <link href="../src/assets/css/light/users/user-profile.css" rel="stylesheet" type="text/css" />
+    <link href="../src/assets/css/dark/components/list-group.css" rel="stylesheet" type="text/css">
+    <link href="../src/assets/css/dark/users/user-profile.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+</head>
+
+<body class="layout-boxed">
+    <!-- BEGIN LOADER -->
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
+    <!--  END LOADER -->
+
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container container-xxl">
+        <header class="header navbar navbar-expand-sm expand-header">
+            <a href="javascript:void(0);" class="sidebarCollapse">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </a>
+
+            <ul class="navbar-item flex-row ms-lg-auto ms-0">
+                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">● Último
+                    acceso: 08:32 | Martin Salazar</li>
+                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar-container">
+                            <div class="avatar avatar-sm avatar-indicators avatar-online">
+                                <img alt="avatar" src="src/assets/img/anonimo.png" class="rounded-circle up-object">
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
+                        <div class="user-profile-section">
+                            <div class="media mx-auto">
+                                <div class="media-body">
+                                    <h5 class="text-default">Martin Salazar</h5>
+                                    <p>Cargo: Admin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-check form-switch form-check-inline form-switch-dark theme-toggle">
+                            <input class="form-check-input" type="checkbox" role="switch" id="form-switch-dark">
+                            <label class="form-check-label" for="form-switch-dark">Oscuro</label>
+                        </div>
+
+                        <div class="dropdown-item">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalPerfil">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-user">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg> <span>Perfil</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="#" onclick="cerrarSesion()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-log-out">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                </svg> <span>Cerrar Sesión</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+            <nav id="sidebar">
+                <div class="navbar-nav theme-brand flex-row  text-center">
+                    <div class="nav-logo">
+                        <div class="nav-item theme-logo">
+                            <a href="./index.html">
+                                <img src="src/assets/img/logo-departamento.png" class="up-object" alt="logo">
+                            </a>
+                        </div>
+                        <div class="nav-item theme-text">
+                            <a href="./index.html" class="nav-link" id="text"></a>
+                        </div>
+                    </div>
+                    <div class="nav-item sidebar-toggle">
+                        <div class="btn-toggle sidebarCollapse">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevrons-left">
+                                <polyline points="11 17 6 12 11 7"></polyline>
+                                <polyline points="18 17 13 12 18 7"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-bottom"></div>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu active">
+                        <a href="#dashboard" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-home">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                <span>Bienvenido</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled show" id="dashboard"
+                            data-bs-parent="#accordionExample">
+                            <li class="active">
+                                <a href="./welcome.html"> Inicio </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span style="color: #f3deaf;">Modulo SIGEAPER</span></div>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#components" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file-text">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>Gestión(Adm.)</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#" onclick="TipoCuenta()"> Gestión de Contratos </a>
+                            </li>
+                        </ul>
+                        <!--<ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Revista Comisario </a>
+                            </li>
+                        </ul>-->
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="./beneficios.html"> Gestión de Beneficios </a>
+                            </li>
+                        </ul>
+                        <!--<ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Reconocimientos</a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Retiros y Bajas </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Cargas Familiares </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Adm. Tramos Cargas Familiares </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Cargas Masivas </a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Resoluciones</a>
+                            </li>
+                        </ul>
+
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Anotaciones Bloqueo</a>
+                            </li>
+                        </ul>
+                        <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Condición de Servicios</a>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <li class="menu">
+                        <a href="./miscontrato.html" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file-text">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>Contratos(User)</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="./mis-asignaciones.html" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file-text">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>Asignaciones(User)</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!--<li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-database">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                                <span>Estadistica y Reporte</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <a href="#" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-grid">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                                <span>Otros Procesos</span>
+                            </div>
+                        </a>
+                    </li>-->
+
+                    <li class="menu">
+                        <a href="#configSegeaper" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-settings">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                    </path>
+                                </svg>
+                                <span>Configuraciones</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="configSegeaper"
+                            data-bs-parent="#accordionExample">
+                            <li class="menu">
+                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modalFechaSistema"
+                                    class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>Fecha</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu">
+                                <a href="#" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-database">
+                                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                        </svg>
+                                        <span>Parámetros</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--<li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span>Modulo SISPER</span>
+                        </div>
+                    </li>-->
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span style="color: #f3deaf;">Modulo SIIPER</span>
+                        </div>
+                    </li>
+
+                    <li class="menu">
+                        <a href="./funcionario.html" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-grid">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                                <span>Ficha Personal(Adm)</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!--<li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span>Modulo RIPER</span>
+                        </div>
+                    </li>-->
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span style="color: #f3deaf;">Configuraciones</span></div>
+                    </li>
+                    <li class="menu">
+                        <a href="#users" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-user">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                <span>Perfil</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="users" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalPerfil"> Configuración Cuenta
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--  END SIDEBAR  -->
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <div class="container min-vh-100">
+                <div class="container">
+                    <!-- BREADCRUMB -->
+                    <div class="page-meta">
+                        <nav class="breadcrumb-style-one" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="./welcome.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                        </svg> Inicio
+                                    </a>
+                                </li>
+
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-file-text">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                        </path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg> Mis Contratos
+                                </li>
+
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- /BREADCRUMB -->
+
+                    <div class="row layout-top-spacing container-carabinero" id="cancel-row">
+                        <div id="wizard_Vertical_Icons" class="col-lg-12 layout-spacing">
+                            <div class="statbox widget box box-shadow">
+                                <div class="widget-header  p-3">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                            <h4><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-file-text">
+                                                    <path
+                                                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                    </path>
+                                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                                </svg> Mis Contratos</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content widget-content-area">
+                                    <div class="row">
+                                        <div class="table-responsive">
+                                            <table class="datatable-universal table table-striped table-bordered nowrap"
+                                                style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tipo</th>
+                                                        <th>Rut</th>
+                                                        <th>DV</th>
+                                                        <th>Nombres</th>
+                                                        <th>Apellidos</th>
+                                                        <th>Cargo</th>
+                                                        <th>Grado</th>
+                                                        <th class="text-center">Acción</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">CPR</td>
+                                                        <td>19.419.161</td>
+                                                        <td>8</td>
+                                                        <td>Jordan Ariel</td>
+                                                        <td>Aguilera Labra</td>
+                                                        <td>Ing. Informatica</td>
+                                                        <td>12</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group" role="group">
+                                                                <button class="btn btn-carabineros-light text-white"
+                                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                    data-bs-title="Mi Información de Funcionario">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 576 512">
+                                                                        <path fill="white"
+                                                                            d="M512 80c8.8 0 16 7.2 16 16l0 320c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16L48 96c0-8.8 7.2-16 16-16l448 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM208 248a56 56 0 1 0 0-112 56 56 0 1 0 0 112zm-32 40c-44.2 0-80 35.8-80 80 0 8.8 7.2 16 16 16l192 0c8.8 0 16-7.2 16-16 0-44.2-35.8-80-80-80l-64 0zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0z" />
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn btn-danger text-white"
+                                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                    data-bs-title="Mi Contrato en PDF">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 576 512">
+                                                                        <path fill="white"
+                                                                            d="M208 48L96 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16l80 0 0 48-80 0c-35.3 0-64-28.7-64-64L32 64C32 28.7 60.7 0 96 0L229.5 0c17 0 33.3 6.7 45.3 18.7L397.3 141.3c12 12 18.7 28.3 18.7 45.3l0 149.5-48 0 0-128-88 0c-39.8 0-72-32.2-72-72l0-88zM348.1 160L256 67.9 256 136c0 13.3 10.7 24 24 24l68.1 0zM240 380l32 0c33.1 0 60 26.9 60 60s-26.9 60-60 60l-12 0 0 40 12 0zm96-80l32 0c28.7 0 52 23.3 52 52l0 64c0 28.7-23.3 52-52 52l-32 0c-11 0-20-9-20-20l0-128c0-11 9-20 20-20zm32 128c6.6 0 12-5.4 12-12l0-64c0-6.6-5.4-12-12-12l-12 0 0 88 12 0zm76-108c0-11 9-20 20-20l48 0c11 0 20 9 20 20s-9 20-20 20l-28 0 0 24 28 0c11 0 20 9 20 20s-9 20-20 20l-28 0 0 44c0 11-9 20-20 20s-20-9-20-20l0-128z" />
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">Profesor</td>
+                                                        <td>19.419.161</td>
+                                                        <td>8</td>
+                                                        <td>Jordan Ariel</td>
+                                                        <td>Aguilera Labra</td>
+                                                        <td>Ing. Informatica</td>
+                                                        <td>12</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group" role="group">
+                                                                <button class="btn btn-carabineros-light text-white"
+                                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                    data-bs-title="Mi Información de Funcionario">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 576 512">
+                                                                        <path fill="white"
+                                                                            d="M512 80c8.8 0 16 7.2 16 16l0 320c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16L48 96c0-8.8 7.2-16 16-16l448 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM208 248a56 56 0 1 0 0-112 56 56 0 1 0 0 112zm-32 40c-44.2 0-80 35.8-80 80 0 8.8 7.2 16 16 16l192 0c8.8 0 16-7.2 16-16 0-44.2-35.8-80-80-80l-64 0zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0z" />
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn btn-danger text-white"
+                                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                    data-bs-title="Mi Contrato en PDF">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 576 512">
+                                                                        <path fill="white"
+                                                                            d="M208 48L96 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16l80 0 0 48-80 0c-35.3 0-64-28.7-64-64L32 64C32 28.7 60.7 0 96 0L229.5 0c17 0 33.3 6.7 45.3 18.7L397.3 141.3c12 12 18.7 28.3 18.7 45.3l0 149.5-48 0 0-128-88 0c-39.8 0-72-32.2-72-72l0-88zM348.1 160L256 67.9 256 136c0 13.3 10.7 24 24 24l68.1 0zM240 380l32 0c33.1 0 60 26.9 60 60s-26.9 60-60 60l-12 0 0 40 12 0zm96-80l32 0c28.7 0 52 23.3 52 52l0 64c0 28.7-23.3 52-52 52l-32 0c-11 0-20-9-20-20l0-128c0-11 9-20 20-20zm32 128c6.6 0 12-5.4 12-12l0-64c0-6.6-5.4-12-12-12l-12 0 0 88 12 0zm76-108c0-11 9-20 20-20l48 0c11 0 20 9 20 20s-9 20-20 20l-28 0 0 24 28 0c11 0 20 9 20 20s-9 20-20 20l-28 0 0 44c0 11-9 20-20 20s-20-9-20-20l0-128z" />
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFIL -->
+            <div class="modal fade" id="modalPerfil" tabindex="-1" role="dialog" aria-labelledby="modalPerfilTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalPerfilTitle"> <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-user">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                Perfil Usuario</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row layout-spacing ">
+
+                                <!-- Content -->
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 layout-top-spacing">
+                                    <div class="user-profile">
+                                        <div class="widget-content widget-content-area">
+                                            <div class="text-center user-info">
+                                                <img src="../src/assets/img/anonimo.png" width="100" alt="avatar">
+                                                <p class="">Martin Salazar</p>
+                                            </div>
+                                            <div class="user-info-list">
+                                                <div class="">
+                                                    <ul class="contacts-block list-unstyled">
+                                                        <li class="contacts-block__item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-check-square">
+                                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                                <path
+                                                                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11">
+                                                                </path>
+                                                            </svg>
+                                                            Grado: C.P.R. GDO. 12
+                                                        </li>
+                                                        <li class="contacts-block__item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-check-square">
+                                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                                <path
+                                                                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11">
+                                                                </path>
+                                                            </svg>
+                                                            Nombres: Martin Salazar
+                                                        </li>
+                                                        <li class="contacts-block__item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-check-square">
+                                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                                <path
+                                                                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11">
+                                                                </path>
+                                                            </svg>
+                                                            Run: 194191618
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Cerrar"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-x-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PERFIL -->
+            <!-- MODALES FECHA SISTEMA -->
+            <div class="modal fade" id="modalFechaSistema" tabindex="-1" role="dialog"
+                aria-labelledby="modalFechaSistemaTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFechaSistemaTitle"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-calendar">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg> Cambio de Fecha</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="form-label">Año</label>
+                                        <input type="number" class="form-control" placeholder="XXXX">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">Mes</label>
+                                        <select class="form-select">
+                                            <option>1.- Enero</option>
+                                            <option>2.- Febrero</option>
+                                            <option>3.- Marzo</option>
+                                            <option>4.- Abril</option>
+                                            <option>5.- Mayo</option>
+                                            <option>6.- Junio</option>
+                                            <option>7.- Julio</option>
+                                            <option>8.- Agosto</option>
+                                            <option>9.- Septiembre</option>
+                                            <option>10.- Octubre</option>
+                                            <option>11.- Noviembre</option>
+                                            <option>12.- Diciembre</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="Cerrar"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-x-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg> </button>
+                            <button type="button" class="btn btn-carabineros"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-play-circle">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODALES FECHA SISTEMA -->
+            <div class="row layout-top-spacing" style="border-top: 5px solid #f3deaf">
+                <footer class="site-footer text-white pt-5" style="background-color: #272427b3; padding-left: 30px;">
+                    <div class="container">
+                        <div class="row g-4">
+                            <!-- About / Brand -->
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="footer-brand d-flex align-items-center mb-3">
+                                    <img src="src/assets/img/carabineros_de_chile.png" alt="CSA" width="140" height="60"
+                                        class="me-2">
+                                </div>
+                                <p class="footer-text small mb-3" style="color: #f3deaf;">
+                                    Institución del Estado de Chile para el orden y seguridad.
+                                </p>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div class="col-6 col-lg-2">
+                                <h6 class="footer-title text-uppercase" style="color: #f3deaf;">Enlaces</h6>
+                                <ul class="list-unstyled footer-links">
+                                    <li><a href="#noticias" class="text-white">Contratos</a></li>
+                                    <li><a href="#servicios" class="text-white">Beneficios</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Info -->
+                            <div class="col-6 col-lg-3">
+                                <h6 class="footer-title text-uppercase" style="color: #f3deaf;">Contacto</h6>
+                                <ul class="list-unstyled footer-contact small">
+                                    <li class="d-flex align-items-start gap-2 mb-2">
+                                        <i class="fa-solid fa-phone mt-1 text-white-50"></i>
+                                        <a href="tel:+136" class="text-white">133</a>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="fa-solid fa-clock mt-1 text-white-50"></i>
+                                        <span class="text-white">Lun - Dom: 24/7 emergencias</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Newsletter -->
+                            <div class="col-12 col-lg-4">
+                                <h6 class="footer-title text-uppercase" style="color: #f3deaf;">Departamento P.7</h6>
+                                <p class="small text-white">Departamento Beneficios Económicos y Registro de Datos.</p>
+                            </div>
+                        </div>
+
+                        <hr class="footer-divider my-4 border-white" />
+
+                        <!-- Legal bar -->
+                        <div
+                            class="footer-legal d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+                            <div class="small text-white">&copy; 2026 Carabineros de CHile.
+                                Todos los derechos reservados.</div>
+                            <ul class="list-inline m-0 small">
+                                <li class="list-inline-item"><a href="#" class="text-white">Privacidad</a></li>
+                                <li class="list-inline-item"><a href="#" class="text-white">Términos</a></li>
+                                <li class="list-inline-item"><a href="#contacto" class="text-white">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+        <!--  END CONTENT AREA  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
+    <script src="src/plugins/src/waves/waves.min.js"></script>
+    <script src="layouts/semi-dark-menu/app.js"></script>
+    <script src="src/plugins/src/highlight/highlight.pack.js"></script>
+    <script src="src/assets/js/scrollspyNav.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="src/plugins/src/apex/apexcharts.min.js"></script>
+    <script src="src/assets/js/dashboard/dash_1.js"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="src/plugins/src/stepper/bsStepper.min.js"></script>
+    <script src="src/plugins/src/stepper/custom-bsStepper.min.js"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+    <script src="src/plugins/src/table/datatable/datatables.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
+    <script src="src/plugins/src/table/datatable/custom_miscellaneous.js"></script>
+
+    <!-- DataTables Responsive JS -->
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+
+
+    <script src="src/plugins/src/sweetalerts2/sweetalerts2.min.js"></script>
+    <script src="src/plugins/src/sweetalerts2/custom-sweetalert.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const chk = document.querySelector('.form-check-input.dark-mode');
+            const themeToggle = document.querySelector('.theme-toggle');
+
+            if (!chk || !themeToggle) return;
+
+            chk.addEventListener('change', function () {
+                themeToggle.click();
+            });
+        });
+    </script>
+
+    <script>
+        function TipoCuenta() {
+            Swal.fire({
+                title: '<form><div class="mb-3"><label for="exampleFormControlSelect1" class="form-label">Seleccionar Unidad de Trabajo</label><select class="form-select" id="exampleFormControlSelect1"><option>COP ESTE</option><option>PREF. ARICA</option><option>REVICOM</option></select></div></form>',
+                text: "Debe seleccionar una opción para continuar",
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"> <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path> <polyline points="16 17 21 12 16 7"></polyline> <line x1="21" y1="12" x2="9" y2="12"></line> </svg>',
+                cancelButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "./contrato.html";
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire(
+                        'Cancelado',
+                        'Queda sin efecto.'
+                    )
+                }
+            })
+        }
+
+        function cerrarSesion() {
+            Swal.fire({
+                title: '¿Estas Seguro?',
+                text: "Si procedes, para volver deberas ingresar nuevamente tu credencial.",
+                icon: 'danger',
+                showCancelButton: true,
+                confirmButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"> <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path> <polyline points="16 17 21 12 16 7"></polyline> <line x1="21" y1="12" x2="9" y2="12"></line> </svg>',
+                cancelButtonText: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "./index.html";
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire(
+                        'Cancelado',
+                        'Queda sin efecto.'
+                    )
+                }
+            })
+        }
+    </script>
+
+    <script>
+            $("#text").ready(function () {
+
+                //Es un fragmento de texto extraido del periódico "El país"
+                var text = "SICEGAP";
+
+                var writer = "";
+                writer.length = 0; //Limpiar el string
+                var maxLength = text.length;
+                var count = 0;
+                var speed = 3000 / maxLength; //La velocidad varía dependiendo de la cantidad de caracteres
+
+                var write = setInterval(function () {
+
+                    if (count > text.length) {
+                        clearInterval(write);
+                    }
+
+                    writer += text.charAt(count);
+                    document.getElementById("text").innerHTML = '<span style="color: #f3deaf;">' + writer + '</span>';
+                    count++;
+
+                }, speed);
+
+                $("#write").click(function () {
+                    clearInterval(write);
+                }); //si se pulsa en el botón limpiar el intervalo
+
+            });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        })
+    </script>
+</body>
+
+</html>
+
+</html>
