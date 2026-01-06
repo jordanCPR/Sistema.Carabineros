@@ -1684,10 +1684,6 @@ body.alt-menu #content {
   }
 }
 
-.text-carabineros {
-  color: #0a1c08;
-}
-
 .btn {
   transition: all .2s ease;
 }
@@ -1696,90 +1692,8 @@ body.alt-menu #content {
   transform: scale(1.02);
 }
 
-.btn-carabineros {
-  transition: all 0.8s;
-  background: #0a1c08 !important;
-  border: none;
-  color: white;
-  box-shadow: 0 0 0 0 #0a1c08;
-}
 
-.btn-carabineros-light {
-  transition: all 0.8s;
-  background-color: #2b4018 !important;
-  border: none;
-  color: white;
-  box-shadow: 0 0 0 0 #0a1c08;
-}
 
-.btn-carabineros-ultra-light {
-  transition: all 0.8s;
-  background-color: #d7e8ca !important;
-  color: #2b4018;
-  border: 1px solid #2b4018;
-  box-shadow: 0 0 0 0 #2b4018;
-}
-
-.btn-carabineros-light:hover {
-  color: white;
-  box-shadow: 0 4px 8px 0 #0a1c08;
-  transform: translate3d(2px, 2px, 0);
-}
-
-.btn-carabineros:hover {
-  color: white;
-  box-shadow: 0 4px 8px 0 #0a1c08;
-  transform: translate3d(2px, 2px, 0);
-}
-
-.btn-carabineros:active {
-  color: white;
-  box-shadow: 0 0 0 0 #0a1c08;
-  transform: translate3d(0, 0, 0);
-}
-
-.input-carabineros {
-  transition: all 0.8s;
-  padding: 2%;
-}
-
-.input-carabineros:focus {
-  padding: 4%;
-  border: 3px solid #0a1c08 !important;
-  border-radius: 0;
-}
-
-.btn-carabinero-big {
-  padding: 0.5rem;
-  margin: 1rem;
-  background-color: rgba(255, 255, 255, 0.897);
-  box-shadow: 2px 2px 2px 0 rgb(235, 233, 233);
-  border-radius: 14px;
-  transition: all .25s ease;
-}
-
-.btn-carabinero-big:hover {
-  color: #e0e0e04b;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
-  cursor: pointer;
-}
-
-.container-carabinero {
-  animation: slideInLeft 2s ease-in;
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
 .modal-content {
   background: white;
